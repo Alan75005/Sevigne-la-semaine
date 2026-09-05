@@ -1,0 +1,8 @@
+{
+  "name": "Sévigné — La semaine",
+  "short_name": "La semaine",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f4f0e8",
+  "theme_color": "#f4f0e8"
+}

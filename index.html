@@ -3,87 +3,99 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#f4f2ed">
+<meta name="theme-color" content="#6f91a6">
 <title>Sévigné — La semaine</title>
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="top"><b>SÉVIGNÉ</b><span>N°32 · SEMAINE B</span></header>
+<header class="top">
+  <div class="brand">COLLÈGE SÉVIGNÉ · COLLÈGE & LYCÉE</div>
+  <h1 id="typed" aria-label="Sévigné — La semaine"></h1>
+  <div class="issue">N°32 · SEMAINE B</div>
+</header>
 
 <main>
-<section class="hero">
-  <div class="hero-copy">
-    <p class="eyebrow">COLLÈGE & LYCÉE · 01—05 JUIN 2026</p>
-    <h1 id="type-title" aria-label="Sévigné — La semaine"></h1>
-    <p class="intro">L’agenda essentiel du collège et du lycée.</p>
-  </div>
-  <figure>
-    <img src="assets/archive-sevigne.jpg" alt="Photographie d’archives du Collège Sévigné">
-    <figcaption>ARCHIVES DU COLLÈGE SÉVIGNÉ</figcaption>
+  <section class="week">
+    <div class="week-label">AGENDA HEBDOMADAIRE</div>
+    <div class="week-range">LUNDI 1 — VENDREDI 5 JUIN 2026</div>
+  </section>
+
+  <section class="essentials" aria-labelledby="ess-title">
+    <h2 id="ess-title">À retenir</h2>
+    <div class="essential"><span>MAR. 2</span><strong>15:00</strong><p>Conseil pédagogique élargi · fin des cours à 15:00</p></div>
+    <div class="essential"><span>JEU. 4</span><strong>18:30</strong><p>Concert des ensembles de musique · Salle Colson</p></div>
+    <div class="essential"><span>2–4 JUIN</span><strong>ECE</strong><p>Épreuves de sciences</p></div>
+  </section>
+
+  <section class="agenda" aria-labelledby="agenda-title">
+    <h2 id="agenda-title">La semaine</h2>
+
+    <article class="day">
+      <header class="day-head"><div class="weekday">LUNDI</div><div class="date">1</div><div class="month">JUIN</div></header>
+      <div class="event"><time>JOURNÉE</time><div><h3>Début des conseils de classes</h3><p>Selon le planning.</p></div></div>
+    </article>
+
+    <article class="day">
+      <header class="day-head"><div class="weekday">MARDI</div><div class="date">2</div><div class="month">JUIN</div></header>
+      <div class="event"><time>12:30–12:45</time><div><h3>Réunion du département de Lettres</h3><p>Salle de réunion 6e.</p></div></div>
+      <div class="event important"><time>15:00</time><div><h3>Conseil pédagogique élargi</h3><p>Rédaction du nouveau Projet d’Établissement · tous les personnels.</p>
+        <details><summary>Voir le déroulé</summary><p>Fin des cours à 15:00 · 15:05 présentation de Jean-Pierre de Giorgio · 15:20 échanges en îlots · 16:10 restitution en plénière.</p></details>
+      </div></div>
+    </article>
+
+    <article class="day">
+      <header class="day-head"><div class="weekday">MERCREDI</div><div class="date">3</div><div class="month">JUIN</div></header>
+      <div class="event"><time>JOURNÉE</time><div><h3>Épreuves pratiques NSI</h3></div></div>
+      <div class="event"><time>08:00–12:00</time><div><h3>BFI · ACL</h3><p>Fin prévisionnelle : 13:40.</p></div></div>
+    </article>
+
+    <article class="day">
+      <header class="day-head"><div class="weekday">JEUDI</div><div class="date">4</div><div class="month">JUIN</div></header>
+      <div class="event"><time>18:30</time><div><h3>Concert des ensembles de musique</h3><p>Salle Colson · direction C. Chéraqui.</p></div></div>
+      <div class="event"><time>4–5 JUIN</time><div><h3>Visite de deux établissements belges</h3><p>Directions de pôles et direction générale · perspective de la journée d’études sur le plurilinguisme du 27 janvier 2027.</p></div></div>
+    </article>
+
+    <article class="day">
+      <header class="day-head"><div class="weekday">VENDREDI</div><div class="date">5</div><div class="month">JUIN</div></header>
+      <div class="event"><time>08:00–12:00</time><div><h3>BFI · Histoire-Géographie</h3><p>Fin prévisionnelle : 13:40.</p></div></div>
+    </article>
+  </section>
+
+  <section class="national">
+    <h2>Épreuves nationales</h2>
+    <div class="row"><strong>2–4 JUIN</strong><span>ECE Sciences</span></div>
+    <div class="row"><strong>3 JUIN</strong><span>Épreuves pratiques NSI · BFI ACL</span></div>
+    <div class="row"><strong>5 JUIN</strong><span>BFI Histoire-Géographie</span></div>
+  </section>
+
+  <section class="next">
+    <h2>À venir</h2>
+    <div class="row"><strong>5–9 JUIN</strong><span>Secondes · voyage à Florence</span></div>
+    <div class="row"><strong>8–15 JUIN</strong><span>Secondes · voyage à Berlin</span></div>
+  </section>
+
+  <figure class="archive">
+    <img src="assets/archive-sevigne.jpg" alt="Photographie des archives du Collège Sévigné">
+    <figcaption>Archives du Collège Sévigné</figcaption>
   </figure>
-</section>
 
-<section class="essential">
-  <div class="section-head"><span>À RETENIR</span><small>EN UN COUP D’ŒIL</small></div>
-  <div class="essential-list">
-    <p><b>MAR 02 · 15:00</b><span>Conseil pédagogique élargi</span><strong>Fin des cours à 15:00</strong></p>
-    <p><b>02—05 JUIN</b><span>Épreuves nationales</span><small>ECE · NSI · BFI</small></p>
-    <p><b>JEU 04 · 18:30</b><span>Concert des ensembles</span><small>Salle Colson</small></p>
-  </div>
-</section>
+  <section class="reminders">
+    <h2>Calendrier des classes</h2>
+    <p><strong>1res / Tales</strong> · départ vendredi 5 au soir ; ateliers de révisions ensuite (Fcs/Maths), voir Jeanne Weeber.</p>
+    <p><strong>2des</strong> · départ mardi 9 au soir, puis stages.</p>
+    <p><strong>3e / 4e</strong> · départ le 22 juin au soir ; ateliers de révisions ensuite pour les 3e, voir Jeanne Weeber.</p>
+    <p><strong>6e / 5e</strong> · départ le 26 juin au soir.</p>
+    <p class="note">6e / 5e à Barbusse du 10 au 17 inclus ; retour pour déjeuner.</p>
+  </section>
 
-<section class="week">
-  <div class="section-head"><span>LA SEMAINE</span><small>AGENDA</small></div>
-  <nav aria-label="Filtrer l’agenda">
-    <button class="active" data-day="all">TOUT</button>
-    <button data-day="lun">LUN 01</button><button data-day="mar">MAR 02</button>
-    <button data-day="mer">MER 03</button><button data-day="jeu">JEU 04</button><button data-day="ven">VEN 05</button>
-  </nav>
-
-  <div class="agenda">
-    <article data-day="lun"><div class="day"><b>01</b><span>LUN</span></div><div class="event"><small>VIE DES CLASSES</small><h2>Début des conseils de classe</h2><p>Selon le planning établi.</p></div></article>
-
-    <article data-day="mar"><div class="day"><b>02</b><span>MAR</span></div><div class="event"><time>12:30—12:45</time><h2>Département de Lettres</h2><p>Salle de réunion 6e.</p></div></article>
-
-    <article data-day="mar" class="key"><div class="day ghost"><b>02</b></div><div class="event"><time>15:00</time><small>TOUS LES PERSONNELS</small><h2>Conseil pédagogique élargi</h2><p>Nouveau Projet d’Établissement.</p><details><summary>Voir le déroulé</summary><p>15:05 · Présentation par Jean-Pierre de Giorgio<br>15:20 · Échanges en îlots<br>16:10 · Restitution en plénière</p></details><strong>FIN DES COURS · 15:00</strong></div></article>
-
-    <article data-day="mer"><div class="day"><b>03</b><span>MER</span></div><div class="event"><small>ÉPREUVES NATIONALES</small><h2>NSI · BFI ACL</h2><p>NSI pratique · BFI ACL 8:00—12:00 (13:40).</p></div></article>
-
-    <article data-day="jeu"><div class="day"><b>04</b><span>JEU</span></div><div class="event"><time>18:30</time><h2>Concert des ensembles de musique</h2><p>Salle Colson · direction C. Chéraqui.</p></div></article>
-
-    <article data-day="jeu"><div class="day ghost"><b>04</b></div><div class="event"><small>INTERNATIONAL</small><h2>Visite de deux établissements belges</h2><p>Directions de pôles et Direction générale · plurilinguisme.</p></div></article>
-
-    <article data-day="ven"><div class="day"><b>05</b><span>VEN</span></div><div class="event"><small>ÉPREUVE NATIONALE</small><h2>BFI · Histoire-géographie</h2><p>8:00—12:00 (13:40).</p></div></article>
-  </div>
-</section>
-
-<section class="compact">
-  <div class="section-head"><span>À VENIR</span><small>PROCHAINS REPÈRES</small></div>
-  <div class="future">
-    <p><b>05—09.06</b><span>Florence</span><small>Voyage des 2des</small></p>
-    <p><b>08—15.06</b><span>Berlin</span><small>Voyage des 2des</small></p>
-  </div>
-</section>
-
-<section class="compact">
-  <div class="section-head"><span>FIN D’ANNÉE</span><small>DATES CLÉS</small></div>
-  <div class="future">
-    <p><b>05.06</b><span>1res & Tales</span><small>Départ au soir</small></p>
-    <p><b>09.06</b><span>2des</span><small>Départ au soir · puis stages</small></p>
-    <p><b>22.06</b><span>3es & 4es</span><small>Départ au soir</small></p>
-    <p><b>26.06</b><span>6es & 5es</span><small>Départ au soir</small></p>
-  </div>
-  <p class="note">6es et 5es à Barbusse du 10 au 17 inclus ; retour au Collège pour déjeuner.</p>
-</section>
-
-<section class="resources">
-  <div class="section-head"><span>RESSOURCES</span><small>ACCÈS RAPIDE</small></div>
-  <div class="links"><span>J’AI BESOIN DE… ↗</span><span>LIVRET DES PERSONNELS ↗</span><span>CALENDRIER DE FIN D’ANNÉE ↗</span><span>SORTIES & VOYAGES ↗</span></div>
-</section>
+  <section class="resources">
+    <h2>Ressources</h2>
+    <p>Procédures « J’AI BESOIN DE » · Livret des personnels · Calendrier du bac et de fin d’année · Sorties & voyages.</p>
+  </section>
 </main>
 
-<footer>COLLÈGE SÉVIGNÉ · PARIS <span>LA SEMAINE · N°32</span></footer>
+<footer>COLLÈGE SÉVIGNÉ · PARIS</footer>
 <script src="app.js"></script>
 </body>
 </html>

@@ -1,11 +1,12 @@
-# Sévigné — La semaine · V4
+# Sévigné — La semaine · V5
 
-Version conçue d'abord pour la lisibilité mobile :
-- jour, date, mois et horaires immédiatement repérables ;
-- bleu Sévigné, fond blanc, aucun aplat noir ;
-- agenda linéaire et hiérarchisé ;
-- informations essentielles en tête ;
-- photo d'archives conservée comme respiration ;
-- animation « machine à écrire » conservée.
+Version mobile prioritaire :
+- aucun fond noir ;
+- bleu Sévigné ;
+- jour, date, mois et horaires agrandis ;
+- typographie minimale de lecture relevée ;
+- pictogrammes et blocs infographiques légers ;
+- agenda conservé comme information principale ;
+- photo d'archives intégrée dans `assets/archive-sevigne.jpg`.
 
-Pour GitHub : remplacer les fichiers de la racine. Conserver `assets/archive-sevigne.jpg` si la photo est déjà présente.
+Déploiement : site statique, aucun build nécessaire sur Cloudflare Pages.

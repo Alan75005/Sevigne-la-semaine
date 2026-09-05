@@ -1,1 +1,4 @@
-const s="Sévigné — La semaine",e=document.getElementById("type-title");let i=0;function t(){if(i<s.length){e.textContent+=s[i++];setTimeout(t,72)}}setTimeout(t,300);document.querySelectorAll("nav button").forEach(b=>b.onclick=()=>{document.querySelectorAll("nav button").forEach(x=>x.classList.remove("active"));b.classList.add("active");let d=b.dataset.day;document.querySelectorAll(".agenda article").forEach(a=>a.hidden=d!=="all"&&a.dataset.day!==d)});if("serviceWorker"in navigator)addEventListener("load",()=>navigator.serviceWorker.register("sw.js"));
+const text="Sévigné — La semaine",el=document.getElementById("type-title");let i=0;
+function type(){if(i<text.length){el.textContent+=text[i++];setTimeout(type,68)}}setTimeout(type,220);
+document.querySelectorAll("nav button").forEach(btn=>btn.addEventListener("click",()=>{document.querySelectorAll("nav button").forEach(b=>b.classList.remove("active"));btn.classList.add("active");const d=btn.dataset.day;document.querySelectorAll(".agenda article").forEach(a=>a.hidden=d!=="all"&&a.dataset.day!==d)}));
+if("serviceWorker"in navigator)addEventListener("load",()=>navigator.serviceWorker.register("sw.js"));

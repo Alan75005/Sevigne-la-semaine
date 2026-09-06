@@ -15,3 +15,11 @@
 .hero.new-hero .hero-title h1{color:#982b38;margin:0}
 .hero.new-hero .hero-title p{font:500 clamp(25px,3vw,38px)/1.05 Georgia,serif;color:#982b38;margin:7px 0 0;text-shadow:0 1px 0 rgba(255,255,255,.65)}
 @media(max-width:640px){.hero.new-hero .sevigne-logo{width:125px;max-height:90px;opacity:.7}.hero.new-hero .hero-title{margin-top:10px}.hero.new-hero .hero-title h1{font-size:46px}.hero.new-hero .hero-title p{font-size:25px;margin-top:3px}}
+
+/* V18 */
+.hero.new-hero .sevigne-logo{opacity:.88!important;mix-blend-mode:multiply;filter:none!important}
+.agenda-four .retain{grid-column:1/-1!important;grid-row:auto!important;order:1}
+.agenda-four .classes{grid-column:1!important;grid-row:auto!important;order:2}
+.agenda-four .outings{grid-column:2!important;grid-row:auto!important;order:3}
+.agenda-four .student{grid-column:1/-1!important;grid-row:auto!important;order:4}
+@media(max-width:640px){.agenda-four .retain,.agenda-four .classes,.agenda-four .outings,.agenda-four .student{grid-column:auto!important;grid-row:auto!important}.hero.new-hero .sevigne-logo{width:118px!important;opacity:.9!important}}

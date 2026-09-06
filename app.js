@@ -95,8 +95,9 @@ async function initPushButton() {
       button.textContent = "Notifications activées";
       button.classList.add("is-on");
       status.textContent = "Vous recevrez la prochaine publication.";
-    } catch (_) {
-      status.textContent = "Le service d’envoi doit encore être relié au site.";
+        } catch (error) {
+      status.textContent = "Erreur Push : " + (error?.name || "Erreur") + " — " + (error?.message || String(error));
+      console.error("Erreur Push Sévigné :", error);
     } finally {
       button.disabled = false;
     }

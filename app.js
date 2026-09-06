@@ -22,8 +22,9 @@ if ("serviceWorker" in navigator) {
 }
 
 // V10 — Web Push. La clé publique VAPID doit être fournie par le Worker.
-const PUSH_CONFIG_URL = "/api/push/config";
-const PUSH_SUBSCRIBE_URL = "/api/push/subscribe";
+const PUSH_API_ORIGIN = "https://sevigne-la-semaine-push.yvonalan1.workers.dev";
+const PUSH_CONFIG_URL = `${PUSH_API_ORIGIN}/api/push/config`;
+const PUSH_SUBSCRIBE_URL = `${PUSH_API_ORIGIN}/api/push/subscribe`;
 
 function base64UrlToUint8Array(value) {
   const padding = "=".repeat((4 - value.length % 4) % 4);

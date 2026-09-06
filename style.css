@@ -68,3 +68,54 @@ footer{border-top:6px solid var(--blue);padding-top:20px;padding-bottom:30px;fon
 .hero h1{color:var(--antique-red);font-family:Georgia,"Times New Roman",serif;font-size:clamp(38px,9vw,58px);font-weight:700;letter-spacing:-.035em;line-height:1.02;margin:22px 0 16px;text-shadow:0 1px 12px rgba(255,255,255,.98)}
 .hero #typed:after{color:var(--antique-red)}
 @media(max-width:520px){.top.hero{min-height:250px}.hero-content{padding:24px 17px 22px}.hero h1{font-size:clamp(36px,10vw,48px)}}
+
+.today{margin:0 0 34px;padding:22px 20px;background:var(--blue-pale);border-left:6px solid var(--blue);border-radius:0 14px 14px 0}
+.today-kicker{font-size:14px;font-weight:900;letter-spacing:.1em;color:var(--blue-dark);margin-bottom:9px}
+.today h2{margin:0 0 13px;font-size:27px}.today .event{grid-template-columns:128px 1fr;padding:15px 0;border-top:1px solid #cbd9df}
+.today .event:first-child{border-top:0}.today .event time{font-size:18px}.today .event h3{font-size:20px}.today .event p{font-size:17px}
+@media(max-width:520px){.today{margin-left:-4px;margin-right:-4px;padding:20px 16px}.today .event{grid-template-columns:112px 1fr;gap:11px}}
+@media(max-width:380px){.today .event{grid-template-columns:1fr}}
+
+/* V8 — frise interactive LUN–VEN */
+html{scroll-behavior:smooth}
+.day-nav{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:7px;
+  margin:0 0 34px;
+  padding:8px;
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:15px;
+}
+.day-nav a{
+  min-width:0;
+  min-height:62px;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:1px;
+  text-decoration:none;
+  color:var(--blue-dark);
+  border-radius:10px;
+  border:1px solid transparent;
+  transition:background .15s ease,color .15s ease,border-color .15s ease;
+}
+.day-nav span{font-size:13px;font-weight:900;letter-spacing:.04em}
+.day-nav strong{font-size:22px;line-height:1;font-variant-numeric:tabular-nums}
+.day-nav a.current{
+  background:var(--blue);
+  color:#fff;
+  border-color:var(--blue);
+}
+.day-nav a:focus-visible{outline:3px solid var(--antique-red);outline-offset:2px}
+.day{scroll-margin-top:14px}
+.day:target{background:var(--blue-pale);border-radius:12px;padding-left:10px;padding-right:10px}
+@media(max-width:380px){
+ .day-nav{gap:4px;padding:6px}
+ .day-nav a{min-height:58px}
+ .day-nav span{font-size:12px}
+ .day-nav strong{font-size:20px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.day-nav a{transition:none}}

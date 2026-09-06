@@ -23,3 +23,15 @@
 .agenda-four .outings{grid-column:2!important;grid-row:auto!important;order:3}
 .agenda-four .student{grid-column:1/-1!important;grid-row:auto!important;order:4}
 @media(max-width:640px){.agenda-four .retain,.agenda-four .classes,.agenda-four .outings,.agenda-four .student{grid-column:auto!important;grid-row:auto!important}.hero.new-hero .sevigne-logo{width:118px!important;opacity:.9!important}}
+/* V19 — en-tête mobile : monogramme transparent + titre en bas à gauche */
+.hero.new-hero .hero-content{display:block;position:relative;height:100%;max-width:1180px;margin:auto;padding:0}
+.hero.new-hero .sevigne-logo{position:absolute;left:22px;top:22px;width:150px!important;height:150px;object-fit:contain;opacity:.48!important;mix-blend-mode:multiply;background:transparent!important;padding:0!important}
+.hero.new-hero .hero-title{position:absolute;left:22px;bottom:30px;margin:0!important;padding:0!important}
+.hero.new-hero .hero-title h1{font-size:clamp(48px,7vw,78px);line-height:.92}
+.hero.new-hero .hero-title p{font-size:clamp(25px,3vw,38px);margin-top:8px}
+@media(max-width:640px){
+ .hero.new-hero .sevigne-logo{left:18px;top:14px;width:100px!important;height:100px;opacity:.42!important}
+ .hero.new-hero .hero-title{left:18px;bottom:26px}
+ .hero.new-hero .hero-title h1{font-size:46px}
+ .hero.new-hero .hero-title p{font-size:25px;margin-top:4px}
+}

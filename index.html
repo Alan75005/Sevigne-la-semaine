@@ -1,127 +1,49 @@
-<!doctype html>
-<html lang="fr">
-<head>
-<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
-<meta http-equiv="Pragma" content="no-cache">
-<meta http-equiv="Expires" content="0">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#6f91a6">
-<title>Sévigné — La semaine</title>
-<link rel="manifest" href="manifest.webmanifest">
-<link rel="stylesheet" href="style.css?v=11">
-</head>
-<body>
-<header class="top hero">
-<img class="hero-photo" src="assets/archive-sevigne.jpg" alt="Archives du Collège Sévigné">
-<div class="hero-veil"></div>
-<div class="hero-content">
-<div class="brand">COLLÈGE SÉVIGNÉ · COLLÈGE & LYCÉE</div>
-<h1 id="typed" aria-label="Sévigné — La semaine"></h1>
-<div class="issue">N°32 · SEMAINE B</div>
+<!doctype html><html lang="fr"><head>
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#6f91a6">
+<title>Sévigné — La semaine</title><link rel="manifest" href="manifest.webmanifest"><link rel="stylesheet" href="style.css?v=13"></head><body>
+<header class="top hero"><img class="hero-photo" src="assets/archive-sevigne.jpg" alt="Archives du Collège Sévigné"><div class="hero-veil"></div><div class="hero-content"><div class="brand">COLLÈGE SÉVIGNÉ · COLLÈGE & LYCÉE</div><h1 id="typed" aria-label="Sévigné — La semaine"></h1><div class="issue">N°1 · SEMAINE A</div></div></header>
+<nav class="tabs" aria-label="Rubriques"><button class="tab active" data-tab="agenda">Agenda</button><button class="tab" data-tab="sorties">Sorties & voyages</button><button class="tab" data-tab="besoin">J’ai besoin de…</button></nav>
+<main>
+<section class="panel active" id="agenda">
+<section class="week"><div class="week-label">AGENDA DU SECOND DEGRÉ · N°1</div><div class="week-range">SEMAINE DU 14 AU 28 SEPTEMBRE 2026</div></section>
+<section class="essentials"><div class="section-title"><span class="ico">◎</span><h2>À retenir</h2></div><div class="essential"><span class="date-chip">14–21 SEPT.</span><strong>ÉLECTIONS</strong><p>Délégués de classes et de groupes (5e).</p></div><div class="essential"><span class="date-chip">17 SEPT.</span><strong>19:00</strong><p>Apéritif de rentrée de l’APE.</p></div><div class="essential"><span class="date-chip">21 SEPT.</span><strong>18:00</strong><p>Réunion Teams · familles et élèves de 1re et Tale · cycle terminal.</p></div></section>
+<div class="section-title"><span class="ico">▦</span><h2>Vie des classes</h2></div>
+<div class="agenda-list">
+<article class="event-card"><div class="datebox"><b>14–21</b><span>SEPT.</span></div><div><h3>Élections des délégués de classes</h3><p>Élections dans les classes.</p></div></article>
+<article class="event-card"><div class="datebox"><b>17</b><span>SEPT.</span></div><div><h3>Apéritif de rentrée de l’APE</h3><p><strong>19:00</strong> · inscription avant le 12 septembre.</p></div></article>
+<article class="event-card"><div class="datebox"><b>21</b><span>SEPT.</span></div><div><h3>Début des ateliers et des études</h3><p>Collège et lycée.</p></div></article>
+<article class="event-card important"><div class="datebox"><b>21</b><span>SEPT.</span></div><div><h3>Réunion cycle terminal</h3><p><strong>18:00 · Teams</strong> · familles et élèves de 1re et Tale.</p></div></article>
+<article class="event-card"><div class="datebox"><b>23</b><span>SEPT.</span></div><div><h3>Conseil d’Administration</h3><p><strong>18:30 · salle 13</strong> · Collège Sévigné.</p></div></article>
+<article class="event-card"><div class="datebox"><b>26</b><span>SEPT.</span></div><div><h3>Forum Meet & Greet Renowned Universities</h3></div></article>
+<article class="event-card"><div class="datebox"><b>28</b><span>SEPT.</span></div><div><h3>Réunion de rentrée · groupes bilingues</h3><p><strong>18:00 · Teams</strong> · familles de 5e et 4e. Lien à venir via le secrétariat.</p></div></article>
 </div>
-</header>
-
-<main><section id="today" class="today" hidden><div class="today-kicker">AUJOURD’HUI</div><h2 id="today-title"></h2><div id="today-events"></div></section>
-<nav class="day-nav" aria-label="Accès direct aux jours de la semaine">
-  <a href="#day-2026-09-06" data-nav-date="2026-09-06"><span>DIM</span><strong>06</strong></a>
-  <a href="#day-2026-09-07" data-nav-date="2026-09-07"><span>LUN</span><strong>07</strong></a>
-  <a href="#day-2026-09-08" data-nav-date="2026-09-08"><span>MAR</span><strong>08</strong></a>
-  <a href="#day-2026-09-09" data-nav-date="2026-09-09"><span>MER</span><strong>09</strong></a>
-  <a href="#day-2026-09-10" data-nav-date="2026-09-10"><span>JEU</span><strong>10</strong></a>
-</nav>
-  <section class="week">
-    <div class="week-label">AGENDA HEBDOMADAIRE</div>
-    <div class="week-range">DIMANCHE 6 — JEUDI 10 SEPTEMBRE 2026</div>
-  </section>
-
-  <section class="essentials">
-    <div class="section-title"><span class="ico">◎</span><h2>À retenir</h2></div>
-    <div class="essential"><span class="date-chip">MAR. 2</span><strong>15:00</strong><p>Conseil pédagogique élargi · fin des cours à 15:00</p></div>
-    <div class="essential"><span class="date-chip">JEU. 4</span><strong>18:30</strong><p>Concert des ensembles de musique · Salle Colson</p></div>
-    <div class="essential"><span class="date-chip">2–4 JUIN</span><strong>ECE</strong><p>Épreuves de sciences</p></div>
-  </section>
-
-  <section class="agenda">
-    <div class="section-title"><span class="ico">▦</span><h2>La semaine</h2></div>
-
-    
-<section class="push-panel" id="push-panel" aria-labelledby="push-title">
-  <div class="push-copy">
-    <div class="push-kicker">LA SEMAINE · NOTIFICATIONS</div>
-    <h2 id="push-title">Recevoir la nouvelle édition</h2>
-    <p id="push-help">Une seule notification lors de la publication du nouvel agenda.</p>
-  </div>
-  <button type="button" id="push-subscribe" class="push-button">Recevoir la nouvelle édition</button>
-  <p id="push-status" class="push-status" aria-live="polite"></p>
+<div class="section-title"><span class="ico">◇</span><h2>Vie de l’élève</h2></div><div class="mini-timeline"><div><strong>14–21 SEPT.</strong><span>Élections des délégués de classes ou de groupes (5e).</span></div><div><strong>21 SEPT.</strong><span>Lancement de la campagne de renouvellement des CVL et CVC.</span></div><div><strong>01 OCT.</strong><span>Élections des délégués du CVL et CVC.</span></div></div>
 </section>
-<article class="day" id="day-2026-09-06" data-date="2026-09-06">
-      <header class="day-head"><div class="weekday">DIMANCHE</div><div class="date">06</div><div class="month">SEPTEMBRE</div></header>
-      <div class="event"><time>JOURNÉE</time><div><h3>Début des conseils de classes</h3><p>Selon le planning.</p></div></div>
-    </article>
-
-    <article class="day" id="day-2026-09-07" data-date="2026-09-07">
-      <header class="day-head"><div class="weekday">LUNDI</div><div class="date">07</div><div class="month">SEPTEMBRE</div></header>
-      <div class="event"><time>12:30–12:45</time><div><h3>Réunion du département de Lettres</h3><p>Salle de réunion 6e.</p></div></div>
-      <div class="event important"><time>15:00</time><div><h3>Conseil pédagogique élargi</h3><p>Rédaction du nouveau Projet d’Établissement · tous les personnels.</p>
-      <details><summary>Voir le déroulé</summary><p>Fin des cours à 15:00 · 15:05 présentation de Jean-Pierre de Giorgio · 15:20 échanges en îlots · 16:10 restitution en plénière.</p></details></div></div>
-    </article>
-
-    <article class="day" id="day-2026-09-08" data-date="2026-09-08">
-      <header class="day-head"><div class="weekday">MARDI</div><div class="date">08</div><div class="month">SEPTEMBRE</div></header>
-      <div class="event"><time>JOURNÉE</time><div><h3>Épreuves pratiques NSI</h3></div></div>
-      <div class="event"><time>08:00–12:00</time><div><h3>BFI · ACL</h3><p>Fin prévisionnelle : 13:40.</p></div></div>
-    </article>
-
-    <article class="day" id="day-2026-09-09" data-date="2026-09-09">
-      <header class="day-head"><div class="weekday">MERCREDI</div><div class="date">09</div><div class="month">SEPTEMBRE</div></header>
-      <div class="event"><time>18:30</time><div><h3>Concert des ensembles de musique</h3><p>Salle Colson · direction C. Chéraqui.</p></div></div>
-      <div class="event"><time>4–5 JUIN</time><div><h3>Visite de deux établissements belges</h3><p>Directions de pôles et direction générale · plurilinguisme.</p></div></div>
-    </article>
-
-    <article class="day" id="day-2026-09-10" data-date="2026-09-10">
-      <header class="day-head"><div class="weekday">JEUDI</div><div class="date">10</div><div class="month">SEPTEMBRE</div></header>
-      <div class="event"><time>08:00–12:00</time><div><h3>BFI · Histoire-Géographie</h3><p>Fin prévisionnelle : 13:40.</p></div></div>
-    </article>
-  </section>
-
-  <section class="info-section national">
-    <div class="section-title"><span class="ico">✓</span><h2>Épreuves nationales</h2></div>
-    <div class="info-row"><strong>02–04 JUIN</strong><span>ECE Sciences</span></div>
-    <div class="info-row"><strong>03 JUIN</strong><span>NSI · BFI ACL</span></div>
-    <div class="info-row"><strong>05 JUIN</strong><span>BFI · Histoire-Géographie</span></div>
-  </section>
-
-  <section class="info-section next">
-    <div class="section-title"><span class="ico">→</span><h2>À venir</h2></div>
-    <div class="travel-grid">
-      <article><div class="travel-date">05–09 JUIN</div><div class="travel-icon">↗</div><h3>Florence</h3><p>Voyage des classes de seconde.</p></article>
-      <article><div class="travel-date">08–15 JUIN</div><div class="travel-icon">↗</div><h3>Berlin</h3><p>Voyage des classes de seconde.</p></article>
-    </div>
-  </section>
-
-  <figure class="archive">
-    <img src="assets/archive-sevigne.jpg" alt="Photographie des archives du Collège Sévigné">
-    <figcaption>Archives du Collège Sévigné</figcaption>
-  </figure>
-
-  <section class="info-section reminders">
-    <div class="section-title"><span class="ico">◷</span><h2>Fin d’année</h2></div>
-    <div class="timeline">
-      <div><strong>05 JUIN</strong><span><b>1res & Tales</b> · départ au soir</span></div>
-      <div><strong>09 JUIN</strong><span><b>2des</b> · départ au soir, puis stages</span></div>
-      <div><strong>22 JUIN</strong><span><b>3es & 4es</b> · départ au soir</span></div>
-      <div><strong>26 JUIN</strong><span><b>6es & 5es</b> · départ au soir</span></div>
-    </div>
-    <p class="note">6e / 5e à Barbusse du 15 au 22 inclus ; retour pour déjeuner.</p>
-  </section>
-
-  <section class="info-section resources">
-    <div class="section-title"><span class="ico">＋</span><h2>Ressources</h2></div>
-    <p>Procédures « J’AI BESOIN DE » · Livret des personnels · Calendrier du bac et de fin d’année · Sorties & voyages.</p>
-  </section>
-</main>
-<footer>COLLÈGE SÉVIGNÉ · PARIS</footer>
-<script src="app.js?v=11"></script>
-</body>
-</html>
+<section class="panel" id="sorties">
+<section class="week"><div class="week-label">SORTIES & VOYAGES</div><div class="week-range">PROGRAMMATION CULTURELLE 2026–2027</div></section>
+<div class="spotlight"><span>PROCHAINS RENDEZ-VOUS</span><h2>Septembre</h2><p>Intégration, théâtre et premiers séjours : une lecture chronologique et immédiate.</p></div>
+<div class="month"><h2>Septembre 2026</h2>
+<div class="trip"><div class="trip-date">21<br><small>SEPT.</small></div><div><span class="tag">2ndes</span><h3>Journée d’intégration</h3><p>8h45–18h · Port-Royal-des-Champs · organisation Mme Mahé.</p></div></div>
+<div class="trip"><div class="trip-date">22<br><small>SEPT.</small></div><div><span class="tag">T HLP</span><h3>Les Bonnes</h3><p>20h30–22h30 · Théâtre de l’Athénée · Mme Attali.</p></div></div>
+<div class="trip"><div class="trip-date">22<br><small>SEPT.</small></div><div><span class="tag">2ndes & 1res hellénistes</span><h3>The Other Place, after Antigone</h3><p>20h–22h · Théâtre de la Ville · Mmes Nappi et Perez.</p></div></div>
+<div class="trip"><div class="trip-date">23<br><small>SEPT.</small></div><div><span class="tag">1res HLP</span><h3>Les Bonnes</h3><p>20h30–22h30 · Théâtre de l’Athénée · Mme Prin-Conti.</p></div></div>
+<div class="trip"><div class="trip-date">24<br><small>SEPT.</small></div><div><span class="tag">1res HLP</span><h3>Les Bonnes</h3><p>20h30–22h30 · Théâtre de l’Athénée · Mme Perez.</p></div></div>
+<div class="trip major"><div class="trip-date">25–27<br><small>SEPT.</small></div><div><span class="tag">6èmes</span><h3>Séjour d’intégration à Grignan</h3><p>Sur les traces de Marie de Sévigné · organisation Mme Mahé.</p></div></div></div>
+<details class="future"><summary>Voir la suite de l’année</summary><div class="future-grid"><div><b>OCT.</b><span>Washington · Venise · Chine · théâtre</span></div><div><b>NOV.–DÉC.</b><span>Théâtre de la Ville · Chaillot · Studio-Théâtre · Bobino</span></div><div><b>JAN.–FÉV.</b><span>Comédie-Française · Théâtre de la Ville · intégrations et mobilités</span></div><div><b>MARS</b><span>Odéon · Rond-Point · Théâtre de la Ville · Sylvia Monfort</span></div></div></details>
+</section>
+<section class="panel" id="besoin">
+<section class="week"><div class="week-label">PROCÉDURES PERSONNELS</div><div class="week-range">J’AI BESOIN DE…</div></section>
+<div class="need-intro"><div class="need-mark">?</div><div><h2>Une demande, le bon circuit.</h2><p>Choisissez votre besoin : délai, interlocuteur et validation apparaissent immédiatement.</p></div></div>
+<div class="need-grid">
+<details class="need-card"><summary><span class="need-icon">◷</span><div><b>Une autorisation d’absence</b><small>À demander 1 semaine à l’avance</small></div></summary><ol><li><b>J–7 :</b> formulaire auprès d’I. Bouat, à renseigner et lui remettre.</li><li>I. Bouat soumet la demande à A. Yvon, qui l’examine sous 48 h.</li><li>Le secrétariat informe le demandeur de la décision.</li><li>I. Bouat organise les remplacements PACTE nécessaires et informe la vie scolaire.</li><li>La vie scolaire modifie les EDT et prévient familles et élèves.</li></ol></details>
+<details class="need-card"><summary><span class="need-icon">▦</span><div><b>Changer de salle</b><small>Hebdomadaire ou durable</small></div></summary><div class="choice"><p><b>Changement hebdomadaire</b><br>→ Vie scolaire, qui examine la demande.</p><p><b>Semestriel ou annuel</b><br>→ A. Yvon, qui examine la demande.</p></div></details>
+<details class="need-card"><summary><span class="need-icon">↗</span><div><b>Organiser une sortie</b><small>Sans nuitée et moins de 25 € / élève</small></div></summary><ol><li><b>3 semaines à l’avance :</b> formulaire auprès d’I. Bouat.</li><li>I. Bouat soumet à A. Yvon, examen avec la vie scolaire sous 48 h.</li><li>Décision communiquée par le secrétariat.</li><li>Si accord, I. Bouat charge M. Mahé de l’organisation administrative et du dossier/devis.</li><li>Budget prévisionnel : A. Yvon saisit la direction générale. Aucune délégation n’est possible.</li><li>Validation matérialisée par la signature de la direction.</li><li>Le professeur propose une réunion d’information et un temps de restitution auprès d’A. Yvon.</li></ol></details>
+<details class="need-card"><summary><span class="need-icon">✦</span><div><b>Organiser un voyage</b><small>Au moins 1 nuitée et/ou plus de 25 €</small></div></summary><ol><li>Formulaire auprès d’I. Bouat, à renseigner et remettre.</li><li>I. Bouat soumet la demande à A. Yvon.</li><li>Décision communiquée par le secrétariat.</li><li>Si accord, I. Bouat sollicite les remplacements PACTE et informe la vie scolaire.</li><li>Mathilde Mahé entreprend les démarches administratives auprès des prestataires.</li><li>La vie scolaire adapte les EDT et prévient familles et élèves.</li><li>Le professeur concerné informe ses collègues.</li></ol><p class="warning">Le document source mentionne encore « avant le 16 septembre 2023 » : cette date historique n’est pas reprise comme échéance 2026.</p></details>
+<details class="need-card"><summary><span class="need-icon">i</span><div><b>Une question administrative</b><small>Qui contacter ?</small></div></summary><div class="choice"><p><b>Rémunéré par le rectorat</b><br>→ I. Bouat</p><p><b>Rémunéré par le Collège Sévigné</b><br>→ J. Youetto</p></div></details>
+<details class="need-card"><summary><span class="need-icon">✓</span><div><b>Préparer le prochain DST</b><small>Sujets, impression, transmission</small></div></summary><ol><li>Respecter la date de dépôt des sujets indiquée dans l’agenda hebdomadaire.</li><li>Transmettre le sujet à A. Mansley pour impression si nécessaire, avec les besoins organisationnels précis.</li><li>48 h après le dépôt, valider l’impression auprès d’A. Mansley si elle n’a pas été faite soi-même.</li><li>A. Mansley transmet la pochette aux coordonnateurs de vie scolaire.</li></ol></details>
+<details class="need-card"><summary><span class="need-icon">＋</span><div><b>Proposer un projet pédagogique</b><small>Idée → validation</small></div></summary><ol><li>Prendre rendez-vous avec A. Yvon pour exposer le projet et étudier les solutions.</li><li>Si un financement est nécessaire, A. Yvon se rapproche de la direction générale pour validation.</li><li>La décision finale est communiquée à la personne concernée.</li></ol></details>
+<details class="need-card"><summary><span class="need-icon">⇄</span><div><b>Changer la composition d’un groupe</b><small>Un circuit très court</small></div></summary><p class="single-step">→ Se rapprocher d’Isabelle Bouat, qui sollicite A. Yvon si nécessaire.</p></details>
+<details class="need-card"><summary><span class="need-icon">△</span><div><b>Bénéficier d’une formation</b><small>Selon votre statut</small></div></summary><div class="choice"><p><b>Personnel enseignant</b><br>→ rendez-vous avec A. Yvon.</p><p><b>Personnel non enseignant</b><br>→ rendez-vous avec S. Laubel.</p></div></details>
+<details class="need-card"><summary><span class="need-icon">€</span><div><b>Effectuer un achat</b><small>Formulaire → validation → achat</small></div></summary><ol><li>Obtenir le formulaire au secrétariat, le renseigner et le déposer auprès d’I. Bouat.</li><li>I. Bouat transmet à A. Yvon pour validation.</li><li>Sous 48 h, le formulaire est retourné au demandeur.</li><li>Si accord, transmettre le document renseigné à A. Fillion pour achat.</li></ol></details>
+</div></section>
+</main><footer>COLLÈGE SÉVIGNÉ · PARIS</footer><script src="app.js?v=13"></script></body></html>

@@ -1,7 +1,8 @@
-# Sévigné — La semaine · V8 — test septembre
+# Sévigné — La semaine · test du 6 septembre
 
-Version de test transposée en septembre 2026.
-La semaine principale est désormais du lundi 7 au vendredi 11 septembre 2026.
-Toutes les dates visibles liées au contenu ont été décalées de façon cohérente pour faciliter le test des fonctions « Aujourd’hui » et de la frise interactive.
-
-Le dimanche 6 septembre, « Aujourd’hui » reste volontairement masqué ; dès le lundi 7 septembre, il affichera automatiquement les événements du lundi.
+Version spéciale de test pour le dimanche 6 septembre 2026.
+- Le premier jour de l’agenda est DIMANCHE 6 SEPTEMBRE.
+- Le bloc « Aujourd’hui » doit donc être visible immédiatement le 06/09.
+- DIM 06 doit être automatiquement mis en évidence dans la frise.
+- La frise conduit directement à chaque journée.
+- Correction de la mise en page mobile : suppression du grand fond bleu appliqué au jour ciblé et frise plus compacte.

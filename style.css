@@ -111,7 +111,7 @@ html{scroll-behavior:smooth}
 }
 .day-nav a:focus-visible{outline:3px solid var(--antique-red);outline-offset:2px}
 .day{scroll-margin-top:14px}
-.day:target{background:var(--blue-pale);border-radius:12px;padding-left:10px;padding-right:10px}
+.day:target{outline:3px solid var(--blue);outline-offset:6px;border-radius:6px}
 @media(max-width:380px){
  .day-nav{gap:4px;padding:6px}
  .day-nav a{min-height:58px}
@@ -119,3 +119,16 @@ html{scroll-behavior:smooth}
  .day-nav strong{font-size:20px}
 }
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.day-nav a{transition:none}}
+
+/* Test 06/09 — correction ergonomique mobile */
+.day-nav{position:relative;overflow:hidden}
+.day-nav a{min-width:0}
+.day-nav a.current{background:var(--blue);color:#fff}
+.day{box-sizing:border-box}
+.day:target{padding-left:0!important;padding-right:0!important;background:transparent!important}
+@media(max-width:520px){
+  .day-nav{gap:4px;padding:6px}
+  .day-nav a{min-height:56px;padding:5px 2px}
+  .day-nav span{font-size:11px}
+  .day-nav strong{font-size:19px}
+}

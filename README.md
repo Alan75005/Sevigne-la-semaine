@@ -1,12 +1,2 @@
-# Sévigné — La semaine · V5
-
-Version mobile prioritaire :
-- aucun fond noir ;
-- bleu Sévigné ;
-- jour, date, mois et horaires agrandis ;
-- typographie minimale de lecture relevée ;
-- pictogrammes et blocs infographiques légers ;
-- agenda conservé comme information principale ;
-- photo d'archives intégrée dans `assets/archive-sevigne.jpg`.
-
-Déploiement : site statique, aucun build nécessaire sur Cloudflare Pages.
+# Sévigné — La semaine · V6
+Photo d’archives en tête, atténuée en transparence. Titre « Sévigné — La semaine » superposé en rouge antique. Lisibilité mobile et structure V5 conservées. Cache PWA V6.

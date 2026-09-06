@@ -35,3 +35,11 @@
  .hero.new-hero .hero-title h1{font-size:46px}
  .hero.new-hero .hero-title p{font-size:25px;margin-top:4px}
 }
+
+/* V20 — hero épuré : aucun logo, titre ancré en bas à gauche */
+.hero.new-hero .hero-content{display:block!important;position:relative!important;height:100%!important;max-width:1180px!important;margin:auto!important;padding:0!important}
+.hero.new-hero .sevigne-logo{display:none!important}
+.hero.new-hero .hero-title{position:absolute!important;left:clamp(24px,5vw,64px)!important;bottom:34px!important;margin:0!important;padding:16px 22px 14px!important;border:0!important;background:rgba(251,250,247,.72)!important;backdrop-filter:blur(2px);border-radius:3px;max-width:none!important}
+.hero.new-hero .hero-title h1{font:500 clamp(46px,6.5vw,74px)/.9 Georgia,serif!important;color:#982b38!important;margin:0!important}
+.hero.new-hero .hero-title p{font:500 clamp(23px,3vw,34px)/1 Georgia,serif!important;color:#982b38!important;margin:8px 0 0!important}
+@media(max-width:640px){.hero.new-hero .hero-title{left:18px!important;bottom:22px!important;padding:11px 14px 10px!important}.hero.new-hero .hero-title h1{font-size:44px!important}.hero.new-hero .hero-title p{font-size:24px!important;margin-top:5px!important}}

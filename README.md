@@ -1,9 +1,7 @@
-# Sévigné — La semaine · V8
+# Sévigné — La semaine · V8 — test septembre
 
-Ajouts :
-- frise interactive LUN 01 → VEN 05 ;
-- le jour correspondant à la date locale de l’iPhone est automatiquement mis en évidence en bleu Sévigné ;
-- chaque jour de la frise mène directement à ses événements ;
-- le bloc « Aujourd’hui » de la V7 est conservé ;
-- photo d’archives et titre rouge antique conservés ;
-- cache PWA passé en V8.
+Version de test transposée en septembre 2026.
+La semaine principale est désormais du lundi 7 au vendredi 11 septembre 2026.
+Toutes les dates visibles liées au contenu ont été décalées de façon cohérente pour faciliter le test des fonctions « Aujourd’hui » et de la frise interactive.
+
+Le dimanche 6 septembre, « Aujourd’hui » reste volontairement masqué ; dès le lundi 7 septembre, il affichera automatiquement les événements du lundi.

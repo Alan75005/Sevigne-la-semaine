@@ -43,3 +43,8 @@
 .hero.new-hero .hero-title h1{font:500 clamp(46px,6.5vw,74px)/.9 Georgia,serif!important;color:#982b38!important;margin:0!important}
 .hero.new-hero .hero-title p{font:500 clamp(23px,3vw,34px)/1 Georgia,serif!important;color:#982b38!important;margin:8px 0 0!important}
 @media(max-width:640px){.hero.new-hero .hero-title{left:18px!important;bottom:22px!important;padding:11px 14px 10px!important}.hero.new-hero .hero-title h1{font-size:44px!important}.hero.new-hero .hero-title p{font-size:24px!important;margin-top:5px!important}}
+
+/* V26 — intégration Livret des personnels */
+.livret-link{border:0;background:transparent;padding:11px 15px;border-radius:999px;font-weight:800;color:var(--dark);font-size:15px;white-space:nowrap;text-decoration:none;display:inline-flex;align-items:center}
+.livret-link:hover{background:var(--pale)}
+@media(max-width:640px){.livret-link{font-size:14px;padding:10px 12px}}

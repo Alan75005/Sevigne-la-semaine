@@ -1,10 +1,1 @@
-{
-  "name": "Sévigné — La semaine",
-  "short_name": "La semaine",
-  "start_url": "./",
-  "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#6f91a6",
-  "lang": "fr",
-  "id": "/"
-}
+{"name":"Agenda du collège et du lycée — Collège Sévigné","short_name":"Agenda Sévigné","start_url":"./","display":"standalone","background_color":"#ffffff","theme_color":"#6f91a6","lang":"fr","id":"/"}

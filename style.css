@@ -132,3 +132,25 @@ html{scroll-behavior:smooth}
   .day-nav span{font-size:11px}
   .day-nav strong{font-size:19px}
 }
+
+/* V10 — abonnement à la nouvelle édition */
+.push-panel{
+  margin:0 0 34px;
+  padding:22px 20px;
+  border:1px solid var(--line);
+  border-left:6px solid var(--antique-red);
+  border-radius:0 14px 14px 0;
+  background:#fff;
+}
+.push-kicker{font-size:12px;font-weight:900;letter-spacing:.09em;color:var(--antique-red);margin-bottom:7px}
+.push-panel h2{font-size:23px;line-height:1.15;margin:0 0 7px;color:var(--ink)}
+.push-panel p{font-size:16px;line-height:1.45;margin:0;color:var(--muted)}
+.push-button{
+  width:100%;min-height:48px;margin-top:17px;padding:11px 15px;
+  border:0;border-radius:10px;background:var(--blue);color:#fff;
+  font:inherit;font-size:16px;font-weight:800;cursor:pointer;
+}
+.push-button:disabled{opacity:.55;cursor:default}
+.push-button.is-on{background:var(--blue-dark)}
+.push-button:focus-visible{outline:3px solid var(--antique-red);outline-offset:3px}
+.push-status{margin-top:11px!important;font-weight:700;color:var(--blue-dark)!important}

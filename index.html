@@ -1,6 +1,6 @@
 <!doctype html><html lang="fr"><head>
 <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#6f91a6">
-<title>Agenda du collège et du lycée — Collège Sévigné</title><link rel="manifest" href="manifest.webmanifest"><link rel="stylesheet" href="style.css?v=20">
+<title>Agenda du collège et du lycée — Collège Sévigné</title><link rel="manifest" href="manifest.webmanifest"><link rel="stylesheet" href="style.css?v=23">
 <style>
 /* V21 — hero branding */
 .hero-brand, .hero-title, .hero-copy, .hero-overlay, .hero-title-wrap {
@@ -73,9 +73,51 @@
 }
 </style>
 
+
+<style>
+/* V23 — correction définitive du bandeau */
+.hero.new-hero .hero-title {
+  position:absolute !important;
+  left:18px !important;
+  top:18px !important;
+  right:auto !important;
+  bottom:auto !important;
+  margin:0 !important;
+  padding:0 !important;
+  width:auto !important;
+  max-width:calc(100% - 36px) !important;
+  background:transparent !important;
+  background-color:transparent !important;
+  box-shadow:none !important;
+  border:0 !important;
+  border-radius:0 !important;
+  backdrop-filter:none !important;
+  -webkit-backdrop-filter:none !important;
+}
+.hero.new-hero .hero-title h1,
+.hero.new-hero .hero-title p {
+  background:transparent !important;
+}
+.tabs .nav-cs-logo {
+  display:block !important;
+  width:38px !important;
+  height:38px !important;
+  min-width:38px !important;
+  object-fit:contain !important;
+  background:transparent !important;
+  border:0 !important;
+  padding:0 !important;
+  margin:0 7px 0 0 !important;
+}
+@media (min-width:641px) {
+  .hero.new-hero .hero-title { left:28px !important; top:26px !important; }
+  .tabs .nav-cs-logo { width:42px !important; height:42px !important; min-width:42px !important; }
+}
+</style>
+
 </head><body>
 <header class="hero new-hero"><div class="archive-hero"><img class="archive-photo" src="assets/archive-sevigne.jpg" alt="Archives du Collège Sévigné"><div class="archive-overlay"></div><div class="hero-content"><div class="hero-title"><h1>Agenda</h1><p>collège &amp; lycée</p></div></div><span class="archive-caption">Archives du Collège Sévigné</span></div></header>
-<nav class="tabs" aria-label="Rubriques"><img class="nav-cs-logo" src="assets/logo-sevigne.png" alt="CS"><button class="tab active" data-tab="agenda">▣&nbsp; Agenda</button><button class="tab" data-tab="sorties">✈&nbsp; Sorties &amp; voyages</button><button class="tab" data-tab="besoin">▤&nbsp; J’ai besoin de…</button></nav>
+<nav class="tabs" aria-label="Rubriques"><img class="nav-cs-logo" src="data:image/png;base64,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" alt="CS"><button class="tab active" data-tab="agenda">▣&nbsp; Agenda</button><button class="tab" data-tab="sorties">✈&nbsp; Sorties &amp; voyages</button><button class="tab" data-tab="besoin">▤&nbsp; J’ai besoin de…</button></nav>
 <main>
 <section class="panel active" id="agenda">
 <div class="month-head"><div><span class="redbar"></span><h2>Septembre 2026</h2></div></div>
@@ -125,4 +167,4 @@
 <details class="need-card"><summary><span class="need-icon">⇄</span><div><b>Changer la composition d’un groupe</b><small>Un circuit très court</small></div></summary><p class="single-step">→ Se rapprocher d’Isabelle Bouat, qui sollicite A. Yvon si nécessaire.</p></details>
 <details class="need-card"><summary><span class="need-icon">△</span><div><b>Bénéficier d’une formation</b><small>Selon votre statut</small></div></summary><div class="choice"><p><b>Personnel enseignant</b><br>→ rendez-vous avec A. Yvon.</p><p><b>Personnel non enseignant</b><br>→ rendez-vous avec S. Laubel.</p></div></details>
 <details class="need-card"><summary><span class="need-icon">€</span><div><b>Effectuer un achat</b><small>Formulaire → validation → achat</small></div></summary><ol><li>Obtenir le formulaire au secrétariat, le renseigner et le déposer auprès d’I. Bouat.</li><li>I. Bouat transmet à A. Yvon pour validation.</li><li>Sous 48 h, le formulaire est retourné au demandeur.</li><li>Si accord, transmettre le document renseigné à A. Fillion pour achat.</li></ol></details>
-</div></section></main><footer>“Travaillons à bien penser.”</footer><script src="app.js?v=18"></script></body></html>
+</div></section></main><footer>“Travaillons à bien penser.”</footer><script src="app.js?v=23"></script></body></html>

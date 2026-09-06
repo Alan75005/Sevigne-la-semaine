@@ -25,9 +25,57 @@
 }
 </style>
 
+
+<style>
+/* V22 */
+.hero-brand, .hero-title-wrap, .hero-title, .hero-copy, .hero-overlay {
+  background: none !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: 0 !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
+.hero-brand, .hero-title-wrap {
+  position: absolute !important;
+  left: 22px !important;
+  top: 22px !important;
+  right: auto !important;
+  bottom: auto !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  width: auto !important;
+  max-width: calc(100% - 44px) !important;
+}
+.hero-title, .hero-brand h1 {
+  color: #982b38 !important;
+  text-align: left !important;
+  margin: 0 !important;
+}
+/* CS logo immediately to the left of the Agenda tab */
+.main-nav, nav {
+  position: relative;
+}
+.nav-cs-logo {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  flex: 0 0 42px;
+  background: transparent !important;
+  margin-right: 8px;
+}
+@media (max-width: 700px) {
+  .hero-brand, .hero-title-wrap {
+    left: 18px !important;
+    top: 18px !important;
+  }
+  .nav-cs-logo { width: 36px; height: 36px; flex-basis: 36px; }
+}
+</style>
+
 </head><body>
 <header class="hero new-hero"><div class="archive-hero"><img class="archive-photo" src="assets/archive-sevigne.jpg" alt="Archives du Collège Sévigné"><div class="archive-overlay"></div><div class="hero-content"><div class="hero-title"><h1>Agenda</h1><p>collège &amp; lycée</p></div></div><span class="archive-caption">Archives du Collège Sévigné</span></div></header>
-<nav class="tabs" aria-label="Rubriques"><button class="tab active" data-tab="agenda">▣&nbsp; Agenda</button><button class="tab" data-tab="sorties">✈&nbsp; Sorties &amp; voyages</button><button class="tab" data-tab="besoin">▤&nbsp; J’ai besoin de…</button></nav>
+<nav class="tabs" aria-label="Rubriques"><img class="nav-cs-logo" src="assets/logo-sevigne.png" alt="CS"><button class="tab active" data-tab="agenda">▣&nbsp; Agenda</button><button class="tab" data-tab="sorties">✈&nbsp; Sorties &amp; voyages</button><button class="tab" data-tab="besoin">▤&nbsp; J’ai besoin de…</button></nav>
 <main>
 <section class="panel active" id="agenda">
 <div class="month-head"><div><span class="redbar"></span><h2>Septembre 2026</h2></div></div>

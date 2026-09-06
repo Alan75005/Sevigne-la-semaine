@@ -154,3 +154,98 @@ html{scroll-behavior:smooth}
 .push-button.is-on{background:var(--blue-dark)}
 .push-button:focus-visible{outline:3px solid var(--antique-red);outline-offset:3px}
 .push-status{margin-top:11px!important;font-weight:700;color:var(--blue-dark)!important}
+
+/* V10.1 — correction mobile demandée */
+@media(max-width:520px){
+  /* Aujourd'hui : bloc compact immédiatement sous le hero */
+  .today{
+    margin:14px 12px 22px;
+    padding:15px 15px 14px;
+    border-left:5px solid var(--blue);
+    border-radius:0 12px 12px 0;
+  }
+  .today-kicker{
+    font-size:12px;
+    margin-bottom:5px;
+  }
+  .today h2{
+    font-size:18px;
+    margin:0 0 7px;
+    line-height:1.15;
+  }
+  .today .event{
+    display:grid;
+    grid-template-columns:76px minmax(0,1fr);
+    gap:10px;
+    padding:9px 0;
+  }
+  .today .event time{font-size:14px;line-height:1.2}
+  .today .event h3{font-size:16px;line-height:1.22;margin:0 0 3px}
+  .today .event p{font-size:14px;line-height:1.3;margin:0}
+  .today .event details{font-size:14px}
+
+  /* Frise : DIM + 06 + SEPT. tient sur chaque case */
+  .day-nav{
+    grid-template-columns:repeat(5,minmax(0,1fr));
+    gap:4px;
+    padding:6px;
+    margin:0 12px 26px;
+    border-radius:12px;
+  }
+  .day-nav a{
+    min-width:0;
+    min-height:68px;
+    padding:6px 1px;
+    overflow:hidden;
+  }
+  .day-nav span{
+    display:block;
+    width:100%;
+    font-size:10px;
+    line-height:1;
+    letter-spacing:.02em;
+    text-align:center;
+    white-space:nowrap;
+  }
+  .day-nav strong{
+    display:block;
+    font-size:20px;
+    line-height:1.05;
+    margin:3px 0 1px;
+  }
+  .day-nav strong::after{
+    content:"SEPT.";
+    display:block;
+    margin-top:3px;
+    font-size:8px;
+    line-height:1;
+    font-weight:800;
+    letter-spacing:0;
+  }
+
+  /* Titres de journées : empêcher SEPTEMBRE de sortir de l'écran */
+  .day-head,.day-header{
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr) auto auto!important;
+    align-items:baseline!important;
+    column-gap:8px!important;
+  }
+  .day .weekday{min-width:0;font-size:18px!important;white-space:nowrap}
+  .day .date{font-size:42px!important;line-height:1!important}
+  .day .month{
+    font-size:16px!important;
+    line-height:1!important;
+    white-space:nowrap;
+    overflow:visible;
+  }
+}
+@media(max-width:380px){
+  .day-nav{margin-left:8px;margin-right:8px;gap:3px}
+  .day-nav span{font-size:9px}
+  .day-nav strong{font-size:18px}
+  .day-nav strong::after{font-size:7px}
+  .today{margin-left:8px;margin-right:8px}
+  .day .weekday{font-size:16px!important}
+  .day .date{font-size:36px!important}
+  .day .month{font-size:14px!important}
+}

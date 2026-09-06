@@ -1,4 +1,4 @@
-const CACHE_VERSION = "sevigne-la-semaine-v10";
+const CACHE_VERSION = "sevigne-la-semaine-v10-1";
 const STATIC_CACHE = `${CACHE_VERSION}-static`;
 const STATIC_ASSETS = [
   "./style.css",

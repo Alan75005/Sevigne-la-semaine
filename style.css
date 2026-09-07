@@ -334,3 +334,18 @@
     line-height:1.08 !important;
   }
 }
+
+/* V42 — centrage absolu du logo sur l’axe de la page mobile */
+@media (max-width: 640px) {
+  .tabs .nav-full-logo {
+    grid-column: 1 / -1 !important;
+    justify-self: center !important;
+    align-self: center !important;
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    position: relative !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+  }
+}

@@ -48,3 +48,6 @@
 .livret-link{border:0;background:transparent;padding:11px 15px;border-radius:999px;font-weight:800;color:var(--dark);font-size:15px;white-space:nowrap;text-decoration:none;display:inline-flex;align-items:center}
 .livret-link:hover{background:var(--pale)}
 @media(max-width:640px){.livret-link{font-size:14px;padding:10px 12px}}
+
+/* V28 — typographie Agenda inspirée du mot-symbole du logo */
+.hero.new-hero .hero-title h1,.hero.new-hero .hero-title p{font-family:"Avenir Next",Avenir,"Century Gothic",Futura,Arial,sans-serif!important;font-weight:400!important;letter-spacing:-.025em!important}

@@ -42,7 +42,7 @@ async function currentSections(){
 $('#load').addEventListener('click',async()=>{
  status('Chargement…');
  try{
-   const saved=await fetch('/api/content',{cache:'no-store'}).then(r=>r.ok?r.json():{});
+   const saved=await fetch('/content',{cache:'no-store'}).then(r=>r.ok?r.json():{});
    const base=await currentSections(); const data={...base,...saved};
    $('#editors').innerHTML='';
    sections.forEach(([id,label])=>$('#editors').appendChild(makeEditor(id,label,data[id]||'')));
@@ -58,7 +58,7 @@ async function saveAll(){
  const pw=$('#pw').value; if(!pw){status('Saisissez le mot de passe administrateur.');return}
  const data={}; sections.forEach(([id])=>{const e=$('#ed-'+id); if(e)data[id]=e.innerHTML});
  status('Enregistrement…');
- const r=await fetch('/api/content',{method:'PUT',headers:{'content-type':'application/json','x-admin-password':pw},body:JSON.stringify(data)});
+ const r=await fetch('/content',{method:'PUT',headers:{'content-type':'application/json','x-admin-password':pw},body:JSON.stringify(data)});
  status(r.ok?'Modifications enregistrées.':'Échec : '+(await r.text()));
 }
 </script></body></html>

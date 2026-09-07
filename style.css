@@ -211,3 +211,35 @@
     border-radius: 999px !important;
   }
 }
+
+/* V38 — logo institutionnel centré + boutons plus fins et plus légers */
+@media (max-width: 640px) {
+  .tabs {
+    grid-auto-rows: auto !important;
+    gap: 9px 10px !important;
+    padding: 14px 24px 20px !important;
+  }
+
+  .tabs .nav-brand-full {
+    grid-column: 1 / -1 !important;
+    display: block !important;
+    width: min(72%, 310px) !important;
+    height: auto !important;
+    max-height: none !important;
+    object-fit: contain !important;
+    justify-self: center !important;
+    margin: 0 auto 12px !important;
+  }
+
+  .tabs .tab,
+  .tabs .livret-link {
+    height: 50px !important;
+    min-height: 50px !important;
+    padding: 6px 10px !important;
+    border-radius: 25px !important;
+    font-size: 12.5px !important;
+    font-weight: 600 !important;
+    line-height: 1.12 !important;
+    letter-spacing: -0.01em !important;
+  }
+}

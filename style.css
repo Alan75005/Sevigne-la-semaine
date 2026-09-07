@@ -54,3 +54,31 @@
 
 /* V29 — programmation sorties/voyages complète */
 #sorties .month{margin-bottom:44px}#sorties .trip-date span{font-size:17px!important;line-height:1.25!important}#sorties .trip p{line-height:1.5}
+
+/* V34 — navigation mobile 2 × 2, sans défilement horizontal */
+@media (max-width: 640px) {
+  .tabs {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 8px !important;
+    overflow: visible !important;
+    width: 100% !important;
+    padding: 8px 10px !important;
+  }
+  .tabs .tab,
+  .tabs .livret-link {
+    width: 100% !important;
+    min-width: 0 !important;
+    min-height: 52px !important;
+    margin: 0 !important;
+    padding: 9px 8px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    white-space: normal !important;
+    line-height: 1.15 !important;
+    font-size: 13px !important;
+    border-radius: 12px !important;
+  }
+}

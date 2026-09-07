@@ -82,3 +82,44 @@
     border-radius: 12px !important;
   }
 }
+
+/* V35 — navigation mobile élégante : 4 onglets parfaitement alignés */
+@media (max-width: 640px) {
+  .tabs {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 8px !important;
+    padding: 10px 12px !important;
+    overflow: visible !important;
+    width: 100% !important;
+    align-items: stretch !important;
+  }
+  .tabs .nav-cs-logo { display: none !important; }
+  .tabs .tab,
+  .tabs .livret-link {
+    box-sizing: border-box !important;
+    width: 100% !important;
+    height: 46px !important;
+    min-width: 0 !important;
+    min-height: 46px !important;
+    margin: 0 !important;
+    padding: 0 10px !important;
+    border: 0 !important;
+    border-radius: 999px !important;
+    background: transparent !important;
+    color: var(--dark) !important;
+    font-size: 13px !important;
+    font-weight: 800 !important;
+    line-height: 1.1 !important;
+    white-space: normal !important;
+    text-decoration: none !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+  .tabs .tab.active {
+    background: var(--dark) !important;
+    color: #fff !important;
+  }
+}

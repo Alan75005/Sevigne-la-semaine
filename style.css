@@ -262,3 +262,75 @@
     letter-spacing:-.012em !important;
   }
 }
+
+/* V41 — composition mobile : logo léger, Agenda pleine ligne, 3 liens en dessous */
+@media (max-width: 640px) {
+  .tabs {
+    display:grid !important;
+    grid-template-columns:repeat(3,minmax(0,1fr)) !important;
+    grid-auto-rows:auto !important;
+    gap:8px 8px !important;
+    padding:12px 20px 18px !important;
+    width:100% !important;
+    box-sizing:border-box !important;
+    overflow:visible !important;
+  }
+
+  /* Logo complet, plus discret, sans cartouche blanc visible */
+  .tabs .nav-full-logo {
+    grid-column:1 / -1 !important;
+    display:block !important;
+    width:min(52%,220px) !important;
+    height:auto !important;
+    max-width:220px !important;
+    justify-self:center !important;
+    margin:0 auto 10px !important;
+    padding:0 !important;
+    border:0 !important;
+    border-radius:0 !important;
+    background:transparent !important;
+    mix-blend-mode:multiply !important;
+  }
+
+  /* Agenda : seul bouton bleu, pleine ligne et affiné */
+  .tabs .tab[data-tab="agenda"],
+  .tabs .tab:first-of-type {
+    grid-column:1 / -1 !important;
+    width:100% !important;
+    height:40px !important;
+    min-height:40px !important;
+    max-height:40px !important;
+    margin:0 0 2px !important;
+    padding:4px 12px !important;
+    border-radius:20px !important;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    font-size:12.5px !important;
+    font-weight:600 !important;
+  }
+
+  /* Trois autres entrées sur une seule ligne, sans fond bleu */
+  .tabs .tab:not([data-tab="agenda"]),
+  .tabs .livret-link {
+    width:100% !important;
+    height:auto !important;
+    min-height:42px !important;
+    max-height:none !important;
+    margin:0 !important;
+    padding:5px 3px !important;
+    border:0 !important;
+    border-radius:0 !important;
+    background:transparent !important;
+    color:#355f78 !important;
+    box-shadow:none !important;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    text-align:center !important;
+    white-space:normal !important;
+    font-size:10.5px !important;
+    font-weight:650 !important;
+    line-height:1.08 !important;
+  }
+}

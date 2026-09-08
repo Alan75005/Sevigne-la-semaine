@@ -500,3 +500,65 @@
   nav.tabs [data-tab="sorties"]{grid-column:2 !important;}
   nav.tabs [data-tab="besoin"]{grid-column:3 !important;}
 }
+
+/* V59 — bandeau desktop pleine largeur, sans bords latéraux */
+@media (min-width:901px){
+  .hero.new-hero{
+    width:100% !important;
+    max-width:none !important;
+    margin:0 !important;
+    padding:0 !important;
+    background-image:url("assets/archive-sevigne.jpg") !important;
+    background-size:cover !important;
+    background-position:center center !important;
+    height:clamp(500px,48vw,700px) !important;
+    min-height:500px !important;
+    position:relative !important;
+    overflow:hidden !important;
+  }
+
+  /* Neutralise le dispositif contain de V58 */
+  .hero.new-hero .archive-hero{
+    position:absolute !important;
+    inset:0 !important;
+    width:100% !important;
+    height:100% !important;
+    background:transparent !important;
+    overflow:hidden !important;
+  }
+  .hero.new-hero .archive-photo{
+    display:none !important;
+  }
+
+  /* Agenda sur la photo, en haut à gauche */
+  .hero.new-hero .hero-content{
+    position:absolute !important;
+    inset:0 !important;
+    z-index:3 !important;
+    width:100% !important;
+    height:100% !important;
+    max-width:none !important;
+  }
+  .hero.new-hero .hero-title{
+    position:absolute !important;
+    top:42px !important;
+    left:42px !important;
+    right:auto !important;
+    bottom:auto !important;
+    margin:0 !important;
+    padding:0 !important;
+    background:transparent !important;
+  }
+
+  /* Mention des archives sur la photo, en bas à droite */
+  .hero.new-hero .archive-caption,
+  .hero.new-hero .hero-caption{
+    position:absolute !important;
+    right:28px !important;
+    bottom:22px !important;
+    left:auto !important;
+    top:auto !important;
+    z-index:4 !important;
+    margin:0 !important;
+  }
+}

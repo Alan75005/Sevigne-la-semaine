@@ -382,3 +382,22 @@
     max-width:calc(50vw - 18px) !important;
   }
 }
+
+/* V53 — dates longues : correction mobile Vie de l'élève */
+@media (max-width:600px){
+  .dash-card.student .row{
+    grid-template-columns: 31% minmax(0,1fr) !important;
+  }
+  .dash-card.student .row time{
+    font-size: clamp(16px,4.5vw,21px) !important;
+    line-height: 1.28 !important;
+    overflow-wrap: anywhere !important;
+    word-break: normal !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    box-sizing: border-box !important;
+  }
+  .dash-card.student .row > div{
+    min-width:0 !important;
+  }
+}

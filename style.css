@@ -401,3 +401,17 @@
     min-width:0 !important;
   }
 }
+
+/* V55 — périodes harmonisées avec mois toujours indiqués */
+@media (max-width:600px){
+  .dash-card.student .row{
+    grid-template-columns: 35% minmax(0,1fr) !important;
+  }
+  .dash-card.student .row time{
+    font-size: clamp(15px,4.1vw,19px) !important;
+    line-height:1.3 !important;
+    text-align:center !important;
+    overflow-wrap:normal !important;
+    word-break:normal !important;
+  }
+}

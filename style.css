@@ -349,3 +349,36 @@
     transform: translateX(-50%) !important;
   }
 }
+
+/* V50 — centrage symétrique des deux onglets secondaires */
+.v50-tabs{
+  grid-template-columns: 1fr 1fr !important;
+}
+.v50-tabs .nav-full-logo,
+.v50-tabs [data-tab="agenda"]{
+  grid-column: 1 / -1 !important;
+  justify-self:center !important;
+}
+.v50-tabs [data-tab="sorties"]{
+  grid-column:1 !important;
+  justify-self:end !important;
+  text-align:center !important;
+}
+.v50-tabs [data-tab="besoin"]{
+  grid-column:2 !important;
+  justify-self:start !important;
+  text-align:center !important;
+}
+.v50-tabs [data-tab="sorties"],
+.v50-tabs [data-tab="besoin"]{
+  width:190px !important;
+  max-width:calc(50vw - 24px) !important;
+  justify-content:center !important;
+}
+@media (max-width:600px){
+  .v50-tabs [data-tab="sorties"],
+  .v50-tabs [data-tab="besoin"]{
+    width:165px !important;
+    max-width:calc(50vw - 18px) !important;
+  }
+}

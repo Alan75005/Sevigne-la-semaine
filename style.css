@@ -416,94 +416,87 @@
   }
 }
 
-/* V57 — correction desktop uniquement.
-   Le rendu mobile (<= 600 px) reste inchangé. */
-@media (min-width: 901px){
-  /* Photo moins tronquée sur écran large */
+/* V58 — desktop : photographie entière + navigation reconstruite.
+   Aucun changement sous 901 px. */
+@media (min-width:901px){
+
+  /* Le bandeau cesse de recadrer la photographie : l'image entière est visible. */
   .hero.new-hero{
-    min-height: 520px !important;
-    height: min(62vw, 620px) !important;
-    background-size: cover !important;
-    background-position: center 42% !important;
+    height:auto !important;
+    padding:0 !important;
+    background:#f4f1eb !important;
+  }
+  .hero.new-hero .archive-hero{
+    position:relative !important;
+    height:clamp(520px,48vw,760px) !important;
+    overflow:hidden !important;
+    background:#f4f1eb !important;
+  }
+  .hero.new-hero .archive-photo{
+    position:absolute !important;
+    inset:0 !important;
+    width:100% !important;
+    height:100% !important;
+    object-fit:contain !important;
+    object-position:center center !important;
   }
 
-  /* Navigation desktop : logo sur sa propre ligne */
-  .tabs,
-  .v52-tabs,
-  .v53-tabs,
-  .v54-tabs,
-  .v55-tabs{
-    display: grid !important;
-    grid-template-columns: repeat(3, minmax(190px, 240px)) !important;
-    justify-content: center !important;
-    align-items: center !important;
-    column-gap: 34px !important;
-    row-gap: 20px !important;
-    padding: 28px 32px 32px !important;
+  /* Titre maintenu sur la photographie. */
+  .hero.new-hero .hero-content{
+    position:absolute !important;
+    inset:0 !important;
+    z-index:2 !important;
+    width:100% !important;
+    max-width:none !important;
+    height:100% !important;
+    pointer-events:none !important;
+  }
+  .hero.new-hero .hero-title{
+    position:absolute !important;
+    left:max(34px,calc((100vw - 1220px)/2)) !important;
+    top:54px !important;
+    bottom:auto !important;
+    padding:0 !important;
+    margin:0 !important;
+    background:transparent !important;
   }
 
-  .tabs .nav-full-logo,
-  .v52-tabs .nav-full-logo,
-  .v53-tabs .nav-full-logo,
-  .v54-tabs .nav-full-logo,
-  .v55-tabs .nav-full-logo{
-    grid-column: 1 / -1 !important;
-    grid-row: 1 !important;
-    justify-self: center !important;
-    width: min(430px, 42vw) !important;
-    max-width: 430px !important;
-    margin: 0 auto 6px !important;
+  /* Logo seul sur sa ligne, puis les trois menus sur une ligne. */
+  nav.tabs{
+    display:grid !important;
+    grid-template-columns:repeat(3,minmax(180px,230px)) !important;
+    justify-content:center !important;
+    align-items:center !important;
+    column-gap:36px !important;
+    row-gap:20px !important;
+    padding:26px 32px 30px !important;
   }
-
-  /* Les trois entrées occupent une seule ligne, avec Agenda horizontal */
-  .tabs [data-tab="agenda"],
-  .tabs [data-tab="sorties"],
-  .tabs [data-tab="besoin"],
-  .v52-tabs [data-tab="agenda"],
-  .v52-tabs [data-tab="sorties"],
-  .v52-tabs [data-tab="besoin"],
-  .v53-tabs [data-tab="agenda"],
-  .v53-tabs [data-tab="sorties"],
-  .v53-tabs [data-tab="besoin"],
-  .v54-tabs [data-tab="agenda"],
-  .v54-tabs [data-tab="sorties"],
-  .v54-tabs [data-tab="besoin"],
-  .v55-tabs [data-tab="agenda"],
-  .v55-tabs [data-tab="sorties"],
-  .v55-tabs [data-tab="besoin"]{
-    grid-row: 2 !important;
-    width: 100% !important;
-    max-width: 240px !important;
-    min-height: 54px !important;
-    height: auto !important;
-    border-radius: 28px !important;
-    justify-self: center !important;
-    justify-content: center !important;
-    text-align: center !important;
-    margin: 0 !important;
-    padding: 12px 18px !important;
-    box-sizing: border-box !important;
+  nav.tabs .nav-full-logo{
+    grid-column:1 / -1 !important;
+    grid-row:1 !important;
+    justify-self:center !important;
+    margin:0 auto 4px !important;
+    width:min(390px,34vw) !important;
+    max-width:390px !important;
   }
-
-  .tabs [data-tab="agenda"],
-  .v52-tabs [data-tab="agenda"],
-  .v53-tabs [data-tab="agenda"],
-  .v54-tabs [data-tab="agenda"],
-  .v55-tabs [data-tab="agenda"]{
-    grid-column: 1 !important;
+  nav.tabs [data-tab="agenda"],
+  nav.tabs [data-tab="sorties"],
+  nav.tabs [data-tab="besoin"]{
+    grid-row:2 !important;
+    position:static !important;
+    width:220px !important;
+    max-width:220px !important;
+    min-height:52px !important;
+    height:52px !important;
+    margin:0 !important;
+    padding:0 18px !important;
+    justify-self:center !important;
+    justify-content:center !important;
+    text-align:center !important;
+    border-radius:26px !important;
+    box-sizing:border-box !important;
   }
-  .tabs [data-tab="sorties"],
-  .v52-tabs [data-tab="sorties"],
-  .v53-tabs [data-tab="sorties"],
-  .v54-tabs [data-tab="sorties"],
-  .v55-tabs [data-tab="sorties"]{
-    grid-column: 2 !important;
-  }
-  .tabs [data-tab="besoin"],
-  .v52-tabs [data-tab="besoin"],
-  .v53-tabs [data-tab="besoin"],
-  .v54-tabs [data-tab="besoin"],
-  .v55-tabs [data-tab="besoin"]{
-    grid-column: 3 !important;
-  }
+  nav.tabs [data-tab="agenda"]{grid-column:1 !important;}
+  nav.tabs [data-tab="sorties"]{grid-column:2 !important;}
+  nav.tabs [data-tab="besoin"]{grid-column:3 !important;}
 }

@@ -1,5 +1,5 @@
-const CACHE='sevigne-agenda-v53';
-const CORE=['./','./index.html','./style.css?v=53','./app.js?v=53','./manifest.webmanifest'];
+const CACHE='sevigne-agenda-v54';
+const CORE=['./','./index.html','./style.css?v=54','./app.js?v=54','./manifest.webmanifest'];
 self.addEventListener('install',e=>{
   self.skipWaiting();
   e.waitUntil(caches.open(CACHE).then(c=>Promise.all(CORE.map(u=>c.add(u).catch(()=>null)))));

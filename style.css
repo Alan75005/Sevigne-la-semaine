@@ -415,3 +415,95 @@
     word-break:normal !important;
   }
 }
+
+/* V57 — correction desktop uniquement.
+   Le rendu mobile (<= 600 px) reste inchangé. */
+@media (min-width: 901px){
+  /* Photo moins tronquée sur écran large */
+  .hero.new-hero{
+    min-height: 520px !important;
+    height: min(62vw, 620px) !important;
+    background-size: cover !important;
+    background-position: center 42% !important;
+  }
+
+  /* Navigation desktop : logo sur sa propre ligne */
+  .tabs,
+  .v52-tabs,
+  .v53-tabs,
+  .v54-tabs,
+  .v55-tabs{
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(190px, 240px)) !important;
+    justify-content: center !important;
+    align-items: center !important;
+    column-gap: 34px !important;
+    row-gap: 20px !important;
+    padding: 28px 32px 32px !important;
+  }
+
+  .tabs .nav-full-logo,
+  .v52-tabs .nav-full-logo,
+  .v53-tabs .nav-full-logo,
+  .v54-tabs .nav-full-logo,
+  .v55-tabs .nav-full-logo{
+    grid-column: 1 / -1 !important;
+    grid-row: 1 !important;
+    justify-self: center !important;
+    width: min(430px, 42vw) !important;
+    max-width: 430px !important;
+    margin: 0 auto 6px !important;
+  }
+
+  /* Les trois entrées occupent une seule ligne, avec Agenda horizontal */
+  .tabs [data-tab="agenda"],
+  .tabs [data-tab="sorties"],
+  .tabs [data-tab="besoin"],
+  .v52-tabs [data-tab="agenda"],
+  .v52-tabs [data-tab="sorties"],
+  .v52-tabs [data-tab="besoin"],
+  .v53-tabs [data-tab="agenda"],
+  .v53-tabs [data-tab="sorties"],
+  .v53-tabs [data-tab="besoin"],
+  .v54-tabs [data-tab="agenda"],
+  .v54-tabs [data-tab="sorties"],
+  .v54-tabs [data-tab="besoin"],
+  .v55-tabs [data-tab="agenda"],
+  .v55-tabs [data-tab="sorties"],
+  .v55-tabs [data-tab="besoin"]{
+    grid-row: 2 !important;
+    width: 100% !important;
+    max-width: 240px !important;
+    min-height: 54px !important;
+    height: auto !important;
+    border-radius: 28px !important;
+    justify-self: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    margin: 0 !important;
+    padding: 12px 18px !important;
+    box-sizing: border-box !important;
+  }
+
+  .tabs [data-tab="agenda"],
+  .v52-tabs [data-tab="agenda"],
+  .v53-tabs [data-tab="agenda"],
+  .v54-tabs [data-tab="agenda"],
+  .v55-tabs [data-tab="agenda"]{
+    grid-column: 1 !important;
+  }
+  .tabs [data-tab="sorties"],
+  .v52-tabs [data-tab="sorties"],
+  .v53-tabs [data-tab="sorties"],
+  .v54-tabs [data-tab="sorties"],
+  .v55-tabs [data-tab="sorties"]{
+    grid-column: 2 !important;
+  }
+  .tabs [data-tab="besoin"],
+  .v52-tabs [data-tab="besoin"],
+  .v53-tabs [data-tab="besoin"],
+  .v54-tabs [data-tab="besoin"],
+  .v55-tabs [data-tab="besoin"]{
+    grid-column: 3 !important;
+  }
+}

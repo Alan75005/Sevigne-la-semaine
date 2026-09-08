@@ -1,0 +1,1 @@
+V51 — Agenda reconstruit à partir du contenu /content transmis par l’utilisateur. Toutes les dates existantes conservées, ajouts 14/09 et 15/09 dans Événements, Vie de l’élève mise à jour, onglets centrés, Livret toujours retiré.

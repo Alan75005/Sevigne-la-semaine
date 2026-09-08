@@ -351,33 +351,33 @@
 }
 
 /* V50 — centrage symétrique des deux onglets secondaires */
-.v51-tabs{
+.v52-tabs{
   grid-template-columns: 1fr 1fr !important;
 }
-.v51-tabs .nav-full-logo,
-.v51-tabs [data-tab="agenda"]{
+.v52-tabs .nav-full-logo,
+.v52-tabs [data-tab="agenda"]{
   grid-column: 1 / -1 !important;
   justify-self:center !important;
 }
-.v51-tabs [data-tab="sorties"]{
+.v52-tabs [data-tab="sorties"]{
   grid-column:1 !important;
   justify-self:end !important;
   text-align:center !important;
 }
-.v51-tabs [data-tab="besoin"]{
+.v52-tabs [data-tab="besoin"]{
   grid-column:2 !important;
   justify-self:start !important;
   text-align:center !important;
 }
-.v51-tabs [data-tab="sorties"],
-.v51-tabs [data-tab="besoin"]{
+.v52-tabs [data-tab="sorties"],
+.v52-tabs [data-tab="besoin"]{
   width:190px !important;
   max-width:calc(50vw - 24px) !important;
   justify-content:center !important;
 }
 @media (max-width:600px){
-  .v51-tabs [data-tab="sorties"],
-  .v51-tabs [data-tab="besoin"]{
+  .v52-tabs [data-tab="sorties"],
+  .v52-tabs [data-tab="besoin"]{
     width:165px !important;
     max-width:calc(50vw - 18px) !important;
   }

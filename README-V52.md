@@ -1,0 +1,1 @@
+V52 — Ajouts chronologiques dans Événements à retenir : exercice incendie du 15/09 à 09h30 ; précision réunion études du 15/09 ; réunion préparatoire Grignan du 23/09 à 10h10. Livret des personnels toujours retiré.

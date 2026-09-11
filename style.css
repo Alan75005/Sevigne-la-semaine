@@ -749,3 +749,8 @@ nav.tabs .nav-full-logo{
     object-position:center 35%!important;
   }
 }
+
+/* V74 - photo d'archive originale : moins blanchie */
+.hero.new-hero .archive-photo{
+  filter: brightness(.86) contrast(1.16) !important;
+}

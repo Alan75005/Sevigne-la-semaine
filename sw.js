@@ -1,4 +1,4 @@
-const CACHE='sevigne-agenda-v73';
+const CACHE='sevigne-agenda-v74';
 const CORE=['./','./index.html','./style.css?v=71','./app.js?v=71','./manifest.webmanifest'];
 self.addEventListener('install',e=>{
   self.skipWaiting();

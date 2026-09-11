@@ -1,0 +1,1 @@
+V65 — centrage précis du logo Collège Sévigné. Aucun autre changement de mise en page ou de contenu.

@@ -708,3 +708,6 @@ nav.tabs .nav-full-logo{
   margin-right:0 !important;
   justify-self:auto !important;
 }
+
+/* V66 */
+@media (min-width:901px){.hero.new-hero{aspect-ratio:969/623!important;background-size:100% 100%!important;}}

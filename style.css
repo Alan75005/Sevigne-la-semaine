@@ -665,3 +665,35 @@
   nav.tabs .training-tab{grid-column:2 !important;}
   nav.tabs [data-tab="besoin"]{grid-column:3 !important;}
 }
+
+/* V63 — trois onglets secondaires identiques + calendrier intégré */
+.tabs{align-items:center}
+.tabs .training-tab{font:inherit;color:inherit}
+@media(max-width:900px){
+  nav.tabs{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:10px 8px!important;padding:24px 18px 30px!important}
+  nav.tabs .nav-full-logo{grid-column:1/-1!important;justify-self:center!important;margin:0 auto 8px!important}
+  nav.tabs [data-tab="agenda"]{grid-column:1/-1!important;width:100%!important;max-width:none!important;margin:0 0 10px!important}
+  nav.tabs [data-tab="sorties"],nav.tabs [data-tab="epreuves"],nav.tabs [data-tab="besoin"]{
+    width:100%!important;min-width:0!important;height:76px!important;margin:0!important;padding:10px 7px!important;border-radius:16px!important;
+    background:#eef4f7!important;color:#355f78!important;display:flex!important;align-items:center!important;justify-content:center!important;
+    text-align:center!important;white-space:normal!important;line-height:1.12!important;font-size:13px!important;font-weight:800!important;
+  }
+}
+@media(min-width:901px){
+  nav.tabs{grid-template-columns:repeat(3,minmax(210px,250px))!important;column-gap:28px!important}
+  nav.tabs .nav-full-logo{grid-column:1/-1!important}
+  nav.tabs [data-tab="agenda"]{grid-column:1/-1!important;grid-row:2!important;width:min(760px,80vw)!important;max-width:760px!important}
+  nav.tabs [data-tab="sorties"]{grid-column:1!important;grid-row:3!important}
+  nav.tabs [data-tab="epreuves"]{grid-column:2!important;grid-row:3!important}
+  nav.tabs [data-tab="besoin"]{grid-column:3!important;grid-row:3!important}
+  nav.tabs [data-tab="sorties"],nav.tabs [data-tab="epreuves"],nav.tabs [data-tab="besoin"]{
+    width:100%!important;max-width:250px!important;height:58px!important;border-radius:18px!important;background:#eef4f7!important;
+    color:#355f78!important;justify-self:center!important;white-space:normal!important;text-align:center!important;justify-content:center!important;
+  }
+}
+.training-head{margin-bottom:18px}.training-intro{background:#eef4f7;border-radius:22px;padding:18px;margin-bottom:28px}.training-intro p{margin:0 0 14px;color:#355f78}
+.training-filters{display:flex;gap:8px;flex-wrap:wrap}.training-filter{border:1px solid #c9d8e0;background:#fff;color:#355f78;border-radius:999px;padding:9px 14px;font-weight:800}.training-filter.active{background:#355f78;color:#fff;border-color:#355f78}
+.training-level{margin:0 0 38px}.training-level-title{display:flex;align-items:baseline;justify-content:space-between;border-bottom:1px solid #d8e0e4;padding:0 2px 10px;margin-bottom:18px}.training-level-title span{font-family:Georgia,serif;font-size:34px;color:#173f59;font-weight:700}.training-level-title b{font-size:13px;color:#6f91a6;text-transform:uppercase;letter-spacing:.06em}
+.training-month{margin:0 0 26px}.training-month>h3{font-family:Georgia,serif;color:#982b38;font-size:23px;margin:0 0 12px}.training-list{display:grid;gap:10px}.training-card{display:grid;grid-template-columns:120px 1fr;gap:18px;background:#fff;border:1px solid #e1e5e6;border-radius:18px;padding:16px 18px;box-shadow:0 5px 18px rgba(23,33,38,.045)}
+.training-card time{font-weight:800;color:#355f78;line-height:1.3}.training-tag{display:inline-block;background:#eef4f7;color:#355f78;border-radius:999px;padding:4px 9px;font-size:12px;font-weight:800;margin-bottom:6px}.training-card h4{margin:0;color:#172126;font-size:17px;line-height:1.28}.training-card p{margin:6px 0 0;color:#66757d;font-weight:700}.training-source{text-align:center;margin:30px 0 10px}.training-source a{display:inline-block;padding:11px 16px;border-radius:999px;background:#eef4f7;color:#355f78;font-weight:800;text-decoration:none}
+@media(max-width:600px){.training-level-title span{font-size:29px}.training-card{grid-template-columns:92px 1fr;gap:12px;padding:14px 13px}.training-card h4{font-size:15px}.training-card time{font-size:13px}.training-intro{padding:15px}.training-filter{padding:8px 11px;font-size:13px}}

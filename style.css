@@ -596,3 +596,72 @@
     height:52px !important;justify-self:center !important;box-sizing:border-box !important;
   }
 }
+
+/* V62 — navigation harmonisée : 3 onglets alignés sous Agenda */
+.external-tab.training-tab{
+  font:inherit;
+  font-weight:800;
+  color:var(--dark);
+  text-decoration:none;
+}
+@media (max-width:900px){
+  nav.tabs{
+    display:grid !important;
+    grid-template-columns:repeat(3,minmax(0,1fr)) !important;
+    column-gap:8px !important;
+    row-gap:14px !important;
+    align-items:stretch !important;
+  }
+  nav.tabs .nav-full-logo{
+    grid-column:1 / -1 !important;
+    grid-row:1 !important;
+  }
+  nav.tabs [data-tab="agenda"]{
+    grid-column:1 / -1 !important;
+    grid-row:2 !important;
+    width:100% !important;
+  }
+  nav.tabs [data-tab="sorties"],
+  nav.tabs .training-tab,
+  nav.tabs [data-tab="besoin"]{
+    grid-row:3 !important;
+    width:100% !important;
+    min-width:0 !important;
+    height:auto !important;
+    min-height:64px !important;
+    padding:9px 5px !important;
+    margin:0 !important;
+    border:0 !important;
+    background:transparent !important;
+    border-radius:0 !important;
+    white-space:normal !important;
+    line-height:1.18 !important;
+    text-align:center !important;
+    justify-content:center !important;
+    align-items:center !important;
+    font-size:clamp(11px,3.15vw,14px) !important;
+    box-sizing:border-box !important;
+  }
+  nav.tabs [data-tab="sorties"]{grid-column:1 !important;}
+  nav.tabs .training-tab{grid-column:2 !important;}
+  nav.tabs [data-tab="besoin"]{grid-column:3 !important;}
+}
+@media (min-width:901px){
+  nav.tabs{
+    grid-template-columns:repeat(3,minmax(210px,260px)) !important;
+    column-gap:28px !important;
+    row-gap:18px !important;
+  }
+  nav.tabs .nav-full-logo{grid-column:1 / -1 !important;grid-row:1 !important;}
+  nav.tabs [data-tab="agenda"]{
+    grid-column:1 / -1 !important;grid-row:2 !important;
+    width:min(760px,100%) !important;max-width:760px !important;justify-self:center !important;
+  }
+  nav.tabs [data-tab="sorties"],nav.tabs .training-tab,nav.tabs [data-tab="besoin"]{
+    grid-row:3 !important;width:100% !important;max-width:260px !important;min-height:52px !important;
+    justify-self:center !important;box-sizing:border-box !important;
+  }
+  nav.tabs [data-tab="sorties"]{grid-column:1 !important;}
+  nav.tabs .training-tab{grid-column:2 !important;}
+  nav.tabs [data-tab="besoin"]{grid-column:3 !important;}
+}

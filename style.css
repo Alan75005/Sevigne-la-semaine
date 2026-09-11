@@ -508,7 +508,7 @@
     max-width:none !important;
     margin:0 !important;
     padding:0 !important;
-    background-image:url("assets/archive-sevigne.jpg") !important;
+    background-image:url("eve-curie-sevigne-1913.jpg?v=69") !important;
     background-size:cover !important;
     background-position:center center !important;
     height:clamp(500px,48vw,700px) !important;
@@ -564,7 +564,7 @@
 }
 
 @media (min-width:901px){
-.hero.new-hero{width:100%!important;max-width:none!important;margin:0!important;padding:0!important;height:auto!important;min-height:0!important;aspect-ratio:1206/721!important;position:relative!important;overflow:hidden!important;background:url("assets/archive-sevigne.jpg") center/100% 100% no-repeat!important;}
+.hero.new-hero{width:100%!important;max-width:none!important;margin:0!important;padding:0!important;height:auto!important;min-height:0!important;aspect-ratio:1206/721!important;position:relative!important;overflow:hidden!important;background:url("eve-curie-sevigne-1913.jpg?v=69") center/100% 100% no-repeat!important;}
 .hero.new-hero .archive-hero{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;background:transparent!important;}
 .hero.new-hero .archive-photo{display:none!important;}
 .hero.new-hero .hero-content{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;max-width:none!important;z-index:3!important;}
@@ -711,3 +711,8 @@ nav.tabs .nav-full-logo{
 
 /* V66 */
 @media (min-width:901px){.hero.new-hero{aspect-ratio:969/623!important;background-size:100% 100%!important;}}
+
+/* V69 - force le bandeau sur la photo de groupe fournie */
+.hero.new-hero {
+  background-image: url("eve-curie-sevigne-1913.jpg?v=69") !important;
+}

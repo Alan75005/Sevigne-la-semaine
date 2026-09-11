@@ -728,3 +728,24 @@ nav.tabs .nav-full-logo{
 .hero.new-hero{
   background-image:url("./bandeau-eve-curie-v70.jpg?v=71")!important;
 }
+
+/* V73 - cadrage du bandeau uniquement, photo d'archive originale inchangée */
+.hero.new-hero{
+  background-image:url("./bandeau-eve-curie-v70.jpg?v=73")!important;
+  background-size:cover!important;
+  background-position:center 38%!important;
+}
+.hero.new-hero .archive-photo{
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover!important;
+  object-position:center 38%!important;
+}
+@media (max-width:900px){
+  .hero.new-hero{
+    background-position:center 35%!important;
+  }
+  .hero.new-hero .archive-photo{
+    object-position:center 35%!important;
+  }
+}

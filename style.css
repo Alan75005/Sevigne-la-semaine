@@ -562,3 +562,37 @@
     margin:0 !important;
   }
 }
+
+@media (min-width:901px){
+.hero.new-hero{width:100%!important;max-width:none!important;margin:0!important;padding:0!important;height:auto!important;min-height:0!important;aspect-ratio:1206/721!important;position:relative!important;overflow:hidden!important;background:url("assets/archive-sevigne.jpg") center/100% 100% no-repeat!important;}
+.hero.new-hero .archive-hero{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;background:transparent!important;}
+.hero.new-hero .archive-photo{display:none!important;}
+.hero.new-hero .hero-content{position:absolute!important;inset:0!important;width:100%!important;height:100%!important;max-width:none!important;z-index:3!important;}
+.hero.new-hero .hero-title{position:absolute!important;top:5.5%!important;left:3.2%!important;right:auto!important;bottom:auto!important;margin:0!important;padding:0!important;background:transparent!important;}
+.hero.new-hero .archive-caption,.hero.new-hero .hero-caption{position:absolute!important;right:2.2%!important;bottom:2.5%!important;left:auto!important;top:auto!important;z-index:4!important;margin:0!important;}
+}
+
+/* V61 — accès au calendrier des épreuves d’entraînement */
+.external-tab{
+  border:0;background:transparent;padding:11px 15px;border-radius:999px;
+  font-weight:800;color:var(--dark);font-size:15px;white-space:nowrap;
+  text-decoration:none;display:inline-flex;align-items:center;justify-content:center;
+}
+@media (max-width:900px){
+  .external-tab{font-size:14px;padding:10px 12px}
+}
+@media (min-width:901px){
+  nav.tabs{
+    grid-template-columns:repeat(4,minmax(175px,220px)) !important;
+    column-gap:24px !important;
+  }
+  nav.tabs .nav-full-logo{grid-column:1 / -1 !important;}
+  nav.tabs [data-tab="agenda"]{grid-column:1 !important;}
+  nav.tabs [data-tab="sorties"]{grid-column:2 !important;}
+  nav.tabs [data-tab="besoin"]{grid-column:3 !important;}
+  nav.tabs .training-tab{
+    grid-column:4 !important;grid-row:2 !important;
+    width:220px !important;max-width:220px !important;min-height:52px !important;
+    height:52px !important;justify-self:center !important;box-sizing:border-box !important;
+  }
+}

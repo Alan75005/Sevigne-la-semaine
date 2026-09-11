@@ -508,7 +508,7 @@
     max-width:none !important;
     margin:0 !important;
     padding:0 !important;
-    background-image:url("eve-curie-sevigne-1913.jpg?v=69") !important;
+    background-image:none;
     background-size:cover !important;
     background-position:center center !important;
     height:clamp(500px,48vw,700px) !important;
@@ -714,5 +714,17 @@ nav.tabs .nav-full-logo{
 
 /* V69 - force le bandeau sur la photo de groupe fournie */
 .hero.new-hero {
-  background-image: url("eve-curie-sevigne-1913.jpg?v=69") !important;
+  background-image:none;
+}
+
+/* V70 - source unique du bandeau */
+.hero.new-hero {
+  background-image: url("./bandeau-eve-curie-v70.jpg") !important;
+  background-repeat: no-repeat !important;
+  background-position: center center !important;
+}
+
+/* V71 - bandeau unique */
+.hero.new-hero{
+  background-image:url("./bandeau-eve-curie-v70.jpg?v=71")!important;
 }

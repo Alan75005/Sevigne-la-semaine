@@ -843,3 +843,122 @@ nav.tabs .nav-full-logo{
   color:#164b6a!important;
   font-weight:700!important;
 }
+
+/* V80 - navigation finale : 4 boutons harmonieux sous Agenda */
+nav.tabs.v52-tabs{
+  display:grid!important;
+  width:100%!important;
+  box-sizing:border-box!important;
+  align-items:stretch!important;
+}
+nav.tabs.v52-tabs .nav-full-logo{
+  grid-row:1!important;
+  grid-column:1/-1!important;
+  position:relative!important;
+  left:auto!important;
+  transform:none!important;
+  justify-self:center!important;
+  margin:0 auto 12px!important;
+}
+nav.tabs.v52-tabs [data-tab="agenda"]{
+  grid-row:2!important;
+  grid-column:1/-1!important;
+  width:100%!important;
+  max-width:none!important;
+  justify-self:stretch!important;
+  border-radius:999px!important;
+}
+nav.tabs.v52-tabs [data-tab="sorties"],
+nav.tabs.v52-tabs [data-tab="epreuves"],
+nav.tabs.v52-tabs [data-tab="orientation"],
+nav.tabs.v52-tabs [data-tab="besoin"]{
+  width:100%!important;
+  max-width:none!important;
+  margin:0!important;
+  position:relative!important;
+  left:auto!important;
+  right:auto!important;
+  transform:none!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  text-align:center!important;
+  white-space:normal!important;
+  background:#eef4f7!important;
+  color:#355f78!important;
+  border:1px solid #d2e0e7!important;
+  border-radius:18px!important;
+  box-shadow:0 4px 12px rgba(53,95,120,.06)!important;
+  line-height:1.15!important;
+}
+nav.tabs.v52-tabs [data-tab="sorties"]:hover,
+nav.tabs.v52-tabs [data-tab="epreuves"]:hover,
+nav.tabs.v52-tabs [data-tab="orientation"]:hover,
+nav.tabs.v52-tabs [data-tab="besoin"]:hover{
+  background:#e5eff4!important;
+}
+nav.tabs.v52-tabs [data-tab="sorties"].active,
+nav.tabs.v52-tabs [data-tab="epreuves"].active,
+nav.tabs.v52-tabs [data-tab="orientation"].active,
+nav.tabs.v52-tabs [data-tab="besoin"].active{
+  background:#355f78!important;
+  color:#fff!important;
+  border-color:#355f78!important;
+}
+
+@media(max-width:900px){
+  nav.tabs.v52-tabs{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    grid-template-rows:auto auto auto auto!important;
+    gap:11px 12px!important;
+    padding:18px 22px 26px!important;
+  }
+  nav.tabs.v52-tabs [data-tab="sorties"]{
+    grid-row:3!important;grid-column:1!important;
+  }
+  nav.tabs.v52-tabs [data-tab="epreuves"]{
+    grid-row:3!important;grid-column:2!important;
+  }
+  nav.tabs.v52-tabs [data-tab="orientation"]{
+    grid-row:4!important;grid-column:1!important;
+  }
+  nav.tabs.v52-tabs [data-tab="besoin"]{
+    grid-row:4!important;grid-column:2!important;
+  }
+  nav.tabs.v52-tabs .tab:not([data-tab="agenda"]){
+    min-height:66px!important;
+    padding:11px 10px!important;
+    font-size:13.5px!important;
+    font-weight:800!important;
+  }
+}
+
+@media(min-width:901px){
+  nav.tabs.v52-tabs{
+    grid-template-columns:repeat(4,minmax(0,1fr))!important;
+    grid-template-rows:auto auto auto!important;
+    gap:12px!important;
+    max-width:1040px!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+  }
+  nav.tabs.v52-tabs [data-tab="sorties"]{grid-row:3!important;grid-column:1!important}
+  nav.tabs.v52-tabs [data-tab="epreuves"]{grid-row:3!important;grid-column:2!important}
+  nav.tabs.v52-tabs [data-tab="orientation"]{grid-row:3!important;grid-column:3!important}
+  nav.tabs.v52-tabs [data-tab="besoin"]{grid-row:3!important;grid-column:4!important}
+  nav.tabs.v52-tabs .tab:not([data-tab="agenda"]){
+    min-height:58px!important;
+    padding:10px 12px!important;
+  }
+}
+
+/* Octobre reprend exactement la hiérarchie visuelle de Septembre */
+.october-month-head{
+  margin-top:42px!important;
+}
+.october-events{
+  grid-template-columns:1fr!important;
+}
+.october-events .dash-card.retain{
+  width:100%!important;
+}

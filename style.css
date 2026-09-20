@@ -764,3 +764,82 @@ nav.tabs .nav-full-logo{
 #epreuves .training-level[hidden]{display:none!important}
 #epreuves .training-level:not([hidden]){display:block!important}
 .dash-card.retain strong em{font-style:italic}
+
+/* V79 - navigation harmonisée + séparation octobre */
+.v52-tabs{
+  display:grid!important;
+  align-items:stretch!important;
+  justify-content:center!important;
+}
+.v52-tabs .nav-full-logo{
+  grid-column:1/-1!important;
+  justify-self:center!important;
+}
+.v52-tabs [data-tab="agenda"]{
+  grid-column:1/-1!important;
+  justify-self:stretch!important;
+  width:100%!important;
+  max-width:none!important;
+}
+.v52-tabs [data-tab="sorties"],
+.v52-tabs [data-tab="epreuves"],
+.v52-tabs [data-tab="orientation"],
+.v52-tabs [data-tab="besoin"]{
+  grid-column:auto!important;
+  grid-row:auto!important;
+  justify-self:stretch!important;
+  width:100%!important;
+  max-width:none!important;
+  margin:0!important;
+  box-sizing:border-box!important;
+  text-align:center!important;
+  align-items:center!important;
+  justify-content:center!important;
+}
+
+@media(max-width:900px){
+  .v52-tabs{
+    grid-template-columns:repeat(2,minmax(0,1fr))!important;
+    gap:10px 12px!important;
+    padding:18px 18px 24px!important;
+  }
+  .v52-tabs .nav-full-logo,
+  .v52-tabs [data-tab="agenda"]{
+    grid-column:1/-1!important;
+  }
+  .v52-tabs .tab:not([data-tab="agenda"]){
+    min-height:64px!important;
+    padding:10px 8px!important;
+    white-space:normal!important;
+    line-height:1.12!important;
+  }
+}
+
+@media(min-width:901px){
+  .v52-tabs{
+    grid-template-columns:repeat(4,minmax(0,1fr))!important;
+    gap:12px!important;
+    max-width:1040px!important;
+    margin-left:auto!important;
+    margin-right:auto!important;
+  }
+  .v52-tabs .nav-full-logo,
+  .v52-tabs [data-tab="agenda"]{
+    grid-column:1/-1!important;
+  }
+}
+
+.event-month-divider{
+  padding:30px 22px 14px!important;
+  background:#fbfaf7!important;
+  border-top:2px solid #d9e3e8!important;
+  border-bottom:1px solid #e3e8ea!important;
+}
+.event-month-divider h4{
+  margin:0!important;
+  font-family:Georgia,serif!important;
+  font-size:clamp(27px,6vw,38px)!important;
+  line-height:1.05!important;
+  color:#164b6a!important;
+  font-weight:700!important;
+}

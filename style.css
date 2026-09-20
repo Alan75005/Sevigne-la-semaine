@@ -962,3 +962,65 @@ nav.tabs.v52-tabs [data-tab="besoin"].active{
 .october-events .dash-card.retain{
   width:100%!important;
 }
+
+/* V81 - Septembre puis Octobre, sans section intermédiaire */
+.september-events,
+.october-events{
+  display:grid!important;
+  grid-template-columns:1fr!important;
+}
+.september-events .dash-card.retain,
+.october-events .dash-card.retain{
+  width:100%!important;
+}
+.october-month-head{
+  margin-top:34px!important;
+}
+.agenda-secondary{
+  margin-top:34px!important;
+}
+
+/* Filtre des épreuves : état explicite et fiable */
+#epreuves .training-level{
+  visibility:visible;
+}
+#epreuves .training-level[hidden]{
+  display:none!important;
+  visibility:hidden!important;
+}
+
+/* V83 - bandeau officiel Collège Sévigné 1934-1935 */
+.hero.new-hero{
+  background-image:url("https://www.collegesevigne.org/content/uploads/2022/12/JE_11e_1934-1935-1024x756.jpg")!important;
+  background-size:cover!important;
+  background-position:center 44%!important;
+}
+.hero.new-hero .archive-photo{
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover!important;
+  object-position:center 44%!important;
+  filter:brightness(.88) contrast(1.12)!important;
+}
+@media(max-width:900px){
+  .hero.new-hero{background-position:center 42%!important}
+  .hero.new-hero .archive-photo{object-position:center 42%!important}
+}
+
+/* V84 - photographie d'archive intégrée localement */
+.hero.new-hero{
+  background-image:url("./bandeau-sevigne-1934-1935.jpg?v=84")!important;
+  background-size:cover!important;
+  background-position:center 44%!important;
+}
+.hero.new-hero .archive-photo{
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover!important;
+  object-position:center 44%!important;
+  filter:brightness(.88) contrast(1.12)!important;
+}
+@media(max-width:900px){
+  .hero.new-hero{background-position:center 42%!important}
+  .hero.new-hero .archive-photo{object-position:center 42%!important}
+}

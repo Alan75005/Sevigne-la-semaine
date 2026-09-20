@@ -1024,3 +1024,9 @@ nav.tabs.v52-tabs [data-tab="besoin"].active{
   .hero.new-hero{background-position:center 42%!important}
   .hero.new-hero .archive-photo{object-position:center 42%!important}
 }
+
+/* V85 - "Tous" = calendrier fusionné et chronologique de tous les niveaux */
+#training-all .training-level-title span{color:#173f59}
+#training-all .training-list{display:grid;gap:12px}
+#training-all[hidden]{display:none!important}
+#epreuves section.training-level[data-training-level][hidden]{display:none!important}

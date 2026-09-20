@@ -754,3 +754,13 @@ nav.tabs .nav-full-logo{
 .hero.new-hero .archive-photo{
   filter: brightness(.86) contrast(1.16) !important;
 }
+
+/* V77 - onglet Orientation */
+.orientation-list{display:grid;gap:14px;margin:20px 0 34px}.orientation-card{display:grid;grid-template-columns:145px 1fr;background:#fff;border:1px solid #dce4e8;border-radius:18px;overflow:hidden}.orientation-date{background:#eef4f7;padding:18px;color:#355f78;display:flex;flex-direction:column;gap:4px}.orientation-card>div:last-child{padding:18px}.orientation-card h3{margin:0 0 6px;color:#172126}.orientation-card p{margin:0;color:#52616a}.orientation-intro{color:#355f78;font-weight:700}
+@media(max-width:900px){nav.tabs{grid-template-columns:repeat(2,minmax(0,1fr))!important}nav.tabs .nav-full-logo,nav.tabs [data-tab="agenda"]{grid-column:1/-1!important}nav.tabs .tab:not([data-tab="agenda"]){width:100%!important;min-height:68px!important}.orientation-card{grid-template-columns:112px 1fr}.orientation-date,.orientation-card>div:last-child{padding:14px}}
+@media(min-width:901px){nav.tabs{grid-template-columns:repeat(4,minmax(0,1fr))!important;max-width:1040px!important}nav.tabs .nav-full-logo,nav.tabs [data-tab="agenda"]{grid-column:1/-1!important}}
+
+/* V78 */
+#epreuves .training-level[hidden]{display:none!important}
+#epreuves .training-level:not([hidden]){display:block!important}
+.dash-card.retain strong em{font-style:italic}

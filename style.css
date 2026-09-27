@@ -1052,3 +1052,22 @@ nav.tabs.v52-tabs [data-tab="besoin"].active{
 .hero-dot.active{background:#fff;transform:scale(1.35)}
 @media(max-width:640px){.hero-arrow{width:34px;height:34px;font-size:27px}.hero-prev{left:9px}.hero-next{right:9px}.hero-dots{bottom:9px;gap:6px;padding:5px 8px}.hero-dot{width:6px;height:6px}}
 @media(prefers-reduced-motion:reduce){.hero-slide{transition:none}}
+
+/* V93 — légende du carrousel */
+.carousel-caption-v93{
+  position:absolute;
+  left:14px;
+  bottom:14px;
+  z-index:30;
+  max-width:calc(100% - 28px);
+  padding:7px 11px;
+  border-radius:10px;
+  background:rgba(255,255,255,.88);
+  color:#355f78;
+  font-size:12px;
+  font-weight:700;
+  line-height:1.25;
+  box-shadow:0 2px 10px rgba(23,33,38,.10);
+  backdrop-filter:blur(4px);
+  -webkit-backdrop-filter:blur(4px);
+}

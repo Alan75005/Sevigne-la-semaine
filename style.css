@@ -1114,3 +1114,65 @@ nav.tabs.v52-tabs [data-tab="besoin"].active{
 #agenda .forum-schedule tbody tr:nth-child(even){background:#f8fbfd}
 #agenda .october-events a[href="#planning-forum-engagement"]{color:#355f78;text-decoration:underline;text-underline-offset:2px}
 @media(max-width:600px){#agenda .forum-schedule table{font-size:11px;min-width:345px}#agenda .forum-schedule td,#agenda .forum-schedule th{padding:7px 6px}}
+
+/* V102 — conférence BHL : hiérarchie et typographie lisibles */
+#agenda .october-events .row.conference-event>div{min-width:0;padding:15px 17px 17px}
+#agenda .october-events .row.conference-event>div>strong{
+  display:block!important;font-size:16px!important;line-height:1.28!important;
+  font-weight:750!important;letter-spacing:-.01em!important;color:#203743!important;
+}
+#agenda .october-events .row.conference-event>div>span{
+  display:block!important;font-size:12.5px!important;line-height:1.4!important;
+  color:#527489!important;margin-top:6px!important;
+}
+#agenda .october-events .conference-description{
+  margin-top:12px;padding-top:11px;border-top:1px solid #e5edf1;
+  max-width:65ch;
+}
+#agenda .october-events .conference-description p{
+  display:block!important;font-size:13.5px!important;line-height:1.58!important;
+  font-weight:400!important;letter-spacing:0!important;color:#405560!important;
+  margin:0 0 9px!important;white-space:normal!important;
+  overflow-wrap:break-word!important;
+}
+#agenda .october-events .conference-description p:last-child{margin-bottom:0!important}
+#agenda .october-events .conference-description b{
+  display:inline!important;font-size:inherit!important;line-height:inherit!important;
+  font-weight:700!important;color:#274e67!important;
+}
+#agenda .october-events .conference-description em{
+  display:inline!important;font-size:inherit!important;line-height:inherit!important;
+  font-style:italic!important;font-weight:inherit!important;
+}
+@media(max-width:600px){
+  #agenda .october-events .row.conference-event>div{padding:14px 12px 16px!important}
+  #agenda .october-events .row.conference-event>div>strong{font-size:15px!important}
+  #agenda .october-events .conference-description p{font-size:13px!important;line-height:1.55!important}
+}
+
+
+/* V103 — BHL: programme déroulant et dossier pédagogique */
+#agenda .october-events .conference-event .bhl-resources{margin-top:16px;max-width:660px;display:grid;gap:10px;min-width:0}
+#agenda .october-events .conference-event .bhl-program{border:1px solid #d6e2e9;border-radius:12px;background:#f8fbfd;overflow:hidden;min-width:0}
+#agenda .october-events .conference-event .bhl-program>summary{display:flex;align-items:center;justify-content:space-between;gap:12px;list-style:none;cursor:pointer;padding:13px 14px;color:#355f78;font-size:13px;font-weight:750;line-height:1.35}
+#agenda .october-events .conference-event .bhl-program>summary::-webkit-details-marker{display:none}
+#agenda .october-events .conference-event .bhl-chevron{font-size:23px;line-height:1;font-weight:400;transition:transform .2s ease}
+#agenda .october-events .conference-event .bhl-program[open] .bhl-chevron{transform:rotate(180deg)}
+#agenda .october-events .conference-event .bhl-program-content{padding:2px 14px 12px;border-top:1px solid #e0eaf0;background:#fff}
+#agenda .october-events .conference-event .bhl-program-step{display:grid;grid-template-columns:48px minmax(0,1fr);gap:11px;padding:14px 0;border-bottom:1px solid #e7edf1}
+#agenda .october-events .conference-event .bhl-program-step:last-child{border-bottom:0;padding-bottom:3px}
+#agenda .october-events .conference-event .bhl-program-step>time{font-size:12px;font-weight:800;color:#982b38;line-height:1.6;padding:0;background:transparent;text-align:left}
+#agenda .october-events .conference-event .bhl-program-step h4{margin:0 0 6px;font-size:13.5px;line-height:1.35;color:#263f4d;font-weight:750}
+#agenda .october-events .conference-event .bhl-program-step p,#agenda .october-events .conference-event .bhl-program-step li{font-size:12.5px!important;line-height:1.55!important;color:#405560!important;font-weight:400!important;margin:0 0 6px!important;overflow-wrap:anywhere}
+#agenda .october-events .conference-event .bhl-program-step ul{margin:5px 0 0;padding-left:17px}
+#agenda .october-events .conference-event .bhl-program-step li{padding-left:1px;margin-bottom:7px!important}
+#agenda .october-events .conference-event .bhl-program-step li:last-child{margin-bottom:0!important}
+#agenda .october-events .conference-event .bhl-program-step strong{display:inline!important;font-size:inherit!important;line-height:inherit!important;color:#274e67!important}
+#agenda .october-events .conference-event .bhl-dossier-link{display:flex;align-items:center;gap:11px;padding:12px 13px;border:1px solid #cadce6;background:#eef4f7;border-radius:12px;text-decoration:none;color:#355f78;min-width:0}
+#agenda .october-events .conference-event .bhl-dossier-link:hover{background:#e3eef4}
+#agenda .october-events .conference-event .bhl-pdf-icon{display:grid;place-items:center;flex:none;width:37px;height:43px;border:1px solid #aac4d1;border-radius:7px;background:#fff;color:#982b38;font-size:10px;font-weight:850;letter-spacing:.04em}
+#agenda .october-events .conference-event .bhl-dossier-link>span:nth-child(2){flex:1;min-width:0}
+#agenda .october-events .conference-event .bhl-dossier-link b{display:block;font-size:12.5px;line-height:1.35;color:#274e67}
+#agenda .october-events .conference-event .bhl-dossier-link small{display:block;font-size:11px;line-height:1.4;color:#607b8b;margin-top:2px}
+#agenda .october-events .conference-event .bhl-link-arrow{font-size:19px;flex:none}
+@media(max-width:600px){#agenda .october-events .conference-event .bhl-program>summary{padding:12px;font-size:12.5px}#agenda .october-events .conference-event .bhl-program-content{padding:2px 11px 11px}#agenda .october-events .conference-event .bhl-program-step{grid-template-columns:43px minmax(0,1fr);gap:8px}#agenda .october-events .conference-event .bhl-program-step p,#agenda .october-events .conference-event .bhl-program-step li{font-size:12px!important}}

@@ -1090,3 +1090,16 @@ nav.tabs.v52-tabs [data-tab="besoin"].active{
   -webkit-backdrop-filter:none!important;
   text-shadow:0 1px 3px rgba(0,0,0,.75)!important;
 }
+
+/* V99 — carrousel des trois affiches, sans recadrage ni texte superposé */
+.hero.new-hero{aspect-ratio:16/9!important;height:auto!important;min-height:0!important;padding:0!important;background:#fff!important}
+.hero.new-hero .archive-hero.sevigne-carousel{background:#fff!important}
+.hero.new-hero .hero-slide{background:#fff!important}
+.hero.new-hero .hero-slide::before{display:none!important}
+.hero.new-hero .hero-slide img{object-fit:contain!important;object-position:center!important;filter:none!important}
+.hero.new-hero .hero-content,.hero.new-hero .archive-overlay,.hero.new-hero .carousel-caption-v93{display:none!important}
+.hero.new-hero .hero-dots{bottom:8px!important}
+.hero.new-hero .hero-arrow{background:rgba(23,63,89,.48)!important}
+#agenda .october-events .row ol{margin:9px 0 0;padding-left:20px;color:#344c59;font-size:13px;line-height:1.55}
+#agenda .october-events .row ol li{margin-bottom:5px}
+@media(max-width:640px){.hero.new-hero{aspect-ratio:16/9!important}}

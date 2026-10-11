@@ -1103,3 +1103,14 @@ nav.tabs.v52-tabs [data-tab="besoin"].active{
 #agenda .october-events .row ol{margin:9px 0 0;padding-left:20px;color:#344c59;font-size:13px;line-height:1.55}
 #agenda .october-events .row ol li{margin-bottom:5px}
 @media(max-width:640px){.hero.new-hero{aspect-ratio:16/9!important}}
+
+/* V100 — planning du Forum de l’engagement, lisible sur mobile */
+#agenda .forum-schedule{margin-top:12px;max-width:100%;overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid #d5e3eb;border-radius:10px}
+#agenda .forum-schedule table{width:100%;border-collapse:collapse;min-width:360px;font-size:12px;line-height:1.4;color:#233d4b}
+#agenda .forum-schedule th{background:#eef4f7;color:#355f78;font-weight:700;text-align:left;padding:9px 8px}
+#agenda .forum-schedule td{padding:8px;border-top:1px solid #e2ebf0;vertical-align:top}
+#agenda .forum-schedule th:first-child,#agenda .forum-schedule td:first-child{white-space:nowrap;width:55px;font-weight:700}
+#agenda .forum-schedule th:nth-child(2),#agenda .forum-schedule td:nth-child(2){width:95px}
+#agenda .forum-schedule tbody tr:nth-child(even){background:#f8fbfd}
+#agenda .october-events a[href="#planning-forum-engagement"]{color:#355f78;text-decoration:underline;text-underline-offset:2px}
+@media(max-width:600px){#agenda .forum-schedule table{font-size:11px;min-width:345px}#agenda .forum-schedule td,#agenda .forum-schedule th{padding:7px 6px}}

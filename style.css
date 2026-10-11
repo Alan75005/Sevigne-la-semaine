@@ -1249,3 +1249,6 @@ nav.tabs.v52-tabs [data-tab="restaurant"].active{background:#355f78!important;co
 #agenda .canteen-note{font-size:11px;line-height:1.5;color:#6c7e89;margin:13px 0 4px}
 #agenda .canteen .text-link{display:inline-block;margin-top:9px}
 @media(max-width:700px){#agenda .canteen-days{grid-template-columns:minmax(0,1fr)}#agenda .canteen-day>summary{flex-direction:row;align-items:baseline;gap:14px}#agenda .canteen-daydate{min-width:68px}#agenda .canteen-plate{flex:1}}
+
+/* V106 : restaurant scolaire, lien unique vers le menu hebdomadaire */
+#agenda .dash-card.canteen .canteen-menu-link{display:inline-flex;align-items:center;margin-top:8px;font-size:clamp(14px,1.5vw,17px);font-weight:700;line-height:1.4}

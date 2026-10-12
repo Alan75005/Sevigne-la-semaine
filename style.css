@@ -1276,3 +1276,13 @@ nav.tabs.v52-tabs [data-tab="restaurant"].active{background:#355f78!important;co
   margin-left:0!important;
   margin-right:0!important;
 }
+
+/* V109 : graisse uniforme des quatre boutons de navigation */
+nav.tabs.v52-tabs .tab[data-tab="sorties"],
+nav.tabs.v52-tabs .tab[data-tab="epreuves"],
+nav.tabs.v52-tabs .tab[data-tab="orientation"],
+nav.tabs.v52-tabs .tab[data-tab="besoin"],
+nav.tabs.v52-tabs .tab[data-tab="sorties"] *,
+nav.tabs.v52-tabs .tab[data-tab="epreuves"] *,
+nav.tabs.v52-tabs .tab[data-tab="orientation"] *,
+nav.tabs.v52-tabs .tab[data-tab="besoin"] * {font-weight:800!important;}

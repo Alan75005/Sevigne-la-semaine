@@ -1252,3 +1252,13 @@ nav.tabs.v52-tabs [data-tab="restaurant"].active{background:#355f78!important;co
 
 /* V106 : restaurant scolaire, lien unique vers le menu hebdomadaire */
 #agenda .dash-card.canteen .canteen-menu-link{display:inline-flex;align-items:center;margin-top:8px;font-size:clamp(14px,1.5vw,17px);font-weight:700;line-height:1.4}
+
+/* V108 : rencontre des humanités, hiérarchie et lisibilité mobile */
+#agenda .humanites-event .humanites-content{min-width:0;padding:16px 18px 18px}
+#agenda .humanites-event .humanites-title{display:block;font-size:clamp(16px,2.15vw,20px);font-weight:750;line-height:1.24;letter-spacing:-.015em;color:#203b4c}
+#agenda .humanites-event .humanites-meta{display:block;margin-top:7px;font-size:clamp(13px,1.55vw,15px);font-weight:500;line-height:1.4;color:#547081}
+#agenda .humanites-event .humanites-invitee{margin-top:14px;padding-top:12px;border-top:1px solid #e5eef2;min-width:0}
+#agenda .humanites-event .humanites-intro{display:block;margin:0 0 3px;font-size:12px;font-weight:600;line-height:1.35;color:#6c7f89}
+#agenda .humanites-event .humanites-name{display:block;margin:0;font-size:clamp(15px,1.8vw,17px);font-weight:700;line-height:1.35;color:#355f78;overflow-wrap:normal;word-break:normal}
+#agenda .humanites-event .humanites-role{display:block;margin-top:3px;font-size:clamp(12px,1.5vw,14px);font-weight:400;line-height:1.45;color:#566e7a}
+@media(max-width:600px){#agenda .humanites-event .humanites-content{padding:14px 12px 16px}#agenda .humanites-event .humanites-invitee{margin-top:12px;padding-top:10px}}

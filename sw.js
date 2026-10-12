@@ -1,4 +1,4 @@
-const CACHE='sevigne-agenda-v106';
+const CACHE='sevigne-agenda-v107';
 const CORE=['./','./index.html','./style.css?v=106','./app.js?v=106','./manifest.webmanifest','./Dossier_conference_Bernard-Henri_Levy.pdf','./menu-restaurant-12-16-octobre-2026.png','./bandeau-sevigne-01.jpg?v=105','./bandeau-sevigne-02.jpg?v=105','./bandeau-sevigne-03.jpg?v=105'];
 self.addEventListener('install',e=>{
   self.skipWaiting();

@@ -1577,84 +1577,100 @@ nav.tabs.v52-tabs .tab:not([data-tab="agenda"]){grid-row:3!important;grid-column
  max-width:90%!important;text-align:center!important
 }
 </style>
-<style id="sevigne-memorial-hero-v102">
-/* Présentation photo et légende : pas de fond flouté, pas d'étirement. */
-#sevigneHeroCarousel {
-  background: #f7f4ef !important;
-  isolation: isolate !important;
-}
-#sevigneHeroCarousel .hero-slide,
-#sevigneHeroCarousel .hero-slide.active {
+<style id="sevigne-memorial-hero-v103">
+/* Carrousel photographique plein cadre : aucun espace latéral PC ou mobile. */
+header.hero.new-hero,
+header.hero.new-hero #sevigneHeroCarousel,
+header.hero.new-hero #sevigneHeroCarousel .hero-slides,
+header.hero.new-hero #sevigneHeroCarousel .hero-slide {
+  width: 100% !important;
+  max-width: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: 0 !important;
+  background: #233747 !important;
   overflow: hidden !important;
-  background: #f7f4ef !important;
 }
-#sevigneHeroCarousel .hero-slide::before,
-#sevigneHeroCarousel .hero-slide::after {
+header.hero.new-hero {
+  height: clamp(330px, 30vw, 430px) !important;
+  max-height: 430px !important;
+  min-height: 330px !important;
+  aspect-ratio: auto !important;
+  position: relative !important;
+}
+header.hero.new-hero #sevigneHeroCarousel {
+  position: absolute !important;
+  inset: 0 !important;
+  height: 100% !important;
+}
+header.hero.new-hero #sevigneHeroCarousel .hero-slides,
+header.hero.new-hero #sevigneHeroCarousel .hero-slide {
+  position: absolute !important;
+  inset: 0 !important;
+  height: 100% !important;
+}
+header.hero.new-hero #sevigneHeroCarousel .hero-slide::before,
+header.hero.new-hero #sevigneHeroCarousel .hero-slide::after {
   display: none !important;
   content: none !important;
-  background-image: none !important;
-}
-#sevigneHeroCarousel .hero-slide img {
-  display: block !important;
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-  object-position: center 50% !important;
+  background: none !important;
   filter: none !important;
 }
-#sevigneHeroCarousel .sevigne-single-caption {
+header.hero.new-hero #sevigneHeroCarousel .hero-slide img {
+  display: block !important;
   position: absolute !important;
-  z-index: 30 !important;
-  right: 18px !important;
-  bottom: 16px !important;
-  left: auto !important;
+  inset: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  top: 0 !important;
+  bottom: 0 !important;
+  width: 100% !important;
+  max-width: none !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center 58% !important;
+  filter: none !important;
+  background: transparent !important;
+  padding: 0 !important;
+  margin: 0 !important;
   transform: none !important;
-  max-width: min(470px, 60%) !important;
-  background: rgba(250,248,244,.96) !important;
-  color: #355f78 !important;
-  border-radius: 3px !important;
-  box-shadow: 0 5px 20px rgba(0,0,0,.12) !important;
-  padding: 12px 18px !important;
-  font: 700 clamp(15px,1.65vw,22px)/1.26 Georgia,serif !important;
+}
+header.hero.new-hero #sevigneHeroCarousel .sevigne-single-caption {
+  position: absolute !important;
+  z-index: 35 !important;
+  top: auto !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  width: 100% !important;
+  max-width: none !important;
+  box-sizing: border-box !important;
+  transform: none !important;
+  margin: 0 !important;
+  padding: 34px max(24px, calc((100vw - 1160px)/2)) 18px !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  background: linear-gradient(180deg, transparent 0%, rgba(10,27,40,.74) 100%) !important;
+  color: #fff !important;
+  text-shadow: 0 1px 4px rgba(0,0,0,.25) !important;
+  font: 600 clamp(17px, 1.8vw, 25px)/1.3 Georgia, serif !important;
   text-align: left !important;
 }
-@media(min-width:901px) {
+@media (max-width:900px) {
   header.hero.new-hero {
-    height: 340px !important;
-    max-height: 340px !important;
-    background: #f7f4ef !important;
+    width:100% !important;
+    height:auto !important;
+    min-height:0 !important;
+    max-height:none !important;
+    aspect-ratio:16/10 !important;
   }
-  #sevigneHeroCarousel {
-    max-width: 1040px !important;
-    margin: 0 auto !important;
+  header.hero.new-hero #sevigneHeroCarousel .hero-slide img {
+    object-position:center 57% !important;
   }
-  #sevigneHeroCarousel .hero-slide img {
-    object-fit: contain !important;
-    object-position: left center !important;
-    width: 50% !important;
-    left: 0 !important;
-    background: #f7f4ef !important;
-  }
-  #sevigneHeroCarousel .sevigne-single-caption {
-    right: 4% !important;
-    left: 53% !important;
-    bottom: auto !important;
-    top: 50% !important;
-    transform: translateY(-50%) !important;
-    max-width: 28% !important;
-    background: none !important;
-    box-shadow: none !important;
-    padding: 12px 5px !important;
-    font-size: clamp(19px,2vw,31px) !important;
-    line-height: 1.25 !important;
-  }
-}
-@media(max-width:900px) {
-  #sevigneHeroCarousel .hero-slide img {object-fit:cover!important}
-  #sevigneHeroCarousel .sevigne-single-caption{
-    max-width:calc(100% - 36px)!important;
-    left:18px!important;right:18px!important;bottom:12px!important;
-    font-size:15px!important;
+  header.hero.new-hero #sevigneHeroCarousel .sevigne-single-caption {
+    padding: 26px 17px 12px !important;
+    font-size: clamp(14px, 3.7vw, 19px) !important;
   }
 }
 </style></head><body>

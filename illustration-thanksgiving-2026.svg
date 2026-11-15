@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="560" viewBox="0 0 1280 560" role="img" aria-label="Illustration Soirée Thanksgiving du 26 novembre 2026 au Collège Sévigné">
+<defs><linearGradient id="paper" x2="0" y2="1"><stop stop-color="#fffaf0"/><stop offset="1" stop-color="#f7ead3"/></linearGradient><linearGradient id="pumpkin" x2="1" y2="0"><stop stop-color="#b85b20"/><stop offset=".5" stop-color="#eaa04a"/><stop offset="1" stop-color="#b65a20"/></linearGradient><filter id="shadow"><feDropShadow dx="0" dy="5" stdDeviation="8" flood-color="#815024" flood-opacity=".15"/></filter></defs>
+<rect width="1280" height="560" fill="url(#paper)"/><rect x="16" y="16" width="1248" height="528" fill="none" stroke="#bd8a49" stroke-width="2"/>
+<g fill="none" stroke="#bf914e" stroke-width="3"><path d="M60 115Q180 80 278 25M1220 115Q1100 80 1002 25"/></g>
+<g fill="#c88a36" opacity=".85"><ellipse cx="110" cy="76" rx="28" ry="9" transform="rotate(-35 110 76)"/><ellipse cx="150" cy="64" rx="28" ry="9" transform="rotate(23 150 64)"/><ellipse cx="192" cy="45" rx="24" ry="8" transform="rotate(-30 192 45)"/><ellipse cx="1170" cy="76" rx="28" ry="9" transform="rotate(35 1170 76)"/><ellipse cx="1130" cy="64" rx="28" ry="9" transform="rotate(-23 1130 64)"/><ellipse cx="1088" cy="45" rx="24" ry="8" transform="rotate(30 1088 45)"/></g>
+<text x="640" y="126" text-anchor="middle" font-family="Georgia,serif" fill="#355f78" font-size="73" font-weight="bold">Soirée Thanksgiving</text>
+<path d="M360 153H920" stroke="#c8954e" stroke-width="3"/>
+<text x="640" y="216" text-anchor="middle" font-family="Georgia,serif" fill="#355f78" font-size="34">Jeudi 26 novembre 2026 · 18 h</text>
+<text x="640" y="268" text-anchor="middle" font-family="Georgia,serif" fill="#6f5d4b" font-size="29">Self du Collège Sévigné</text>
+<g filter="url(#shadow)"><ellipse cx="640" cy="456" rx="405" ry="34" fill="#c49b68" opacity=".35"/><ellipse cx="640" cy="435" rx="325" ry="45" fill="#e1c89f" stroke="#a87c49" stroke-width="4"/></g>
+<g fill="url(#pumpkin)" stroke="#9c541e" stroke-width="3"><ellipse cx="310" cy="392" rx="87" ry="78"/><ellipse cx="310" cy="392" rx="49" ry="76" opacity=".7"/><ellipse cx="310" cy="392" rx="19" ry="74" opacity=".58"/><ellipse cx="970" cy="394" rx="83" ry="75"/><ellipse cx="970" cy="394" rx="46" ry="73" opacity=".75"/><ellipse cx="970" cy="394" rx="18" ry="71" opacity=".6"/></g>
+<g stroke="#596e30" stroke-width="10" stroke-linecap="round"><path d="M310 315l8-28"/><path d="M970 320l-4-28"/></g>
+<g fill="#a36f2e"><path d="M477 412q-20-110 62-96 66 7 105 61 58-55 107-52 89 5 62 99-49 38-167 41-107 0-169-53z" fill="#ba7134"/><path d="M508 414q-15-74 45-66 57 8 90 49 61-52 104-40 42 10 29 59-76 38-268-2z" fill="#d58c44"/><path d="M479 414q160 35 335-3" fill="none" stroke="#975321" stroke-width="8"/></g>
+<g fill="#e2ad52"><ellipse cx="565" cy="450" rx="20" ry="10"/><ellipse cx="612" cy="457" rx="18" ry="10"/><ellipse cx="676" cy="453" rx="20" ry="10"/><ellipse cx="728" cy="449" rx="20" ry="10"/></g>
+<g fill="#6c7b3b"><path d="M394 461q48-34 74-25-31 46-74 25z"/><path d="M885 455q-53-26-75-10 46 35 75 10z"/></g>
+<text x="640" y="522" text-anchor="middle" font-family="Georgia,serif" fill="#896739" font-size="19" letter-spacing="3">COLLÈGE SÉVIGNÉ · PARIS</text>
+</svg>

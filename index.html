@@ -1592,10 +1592,10 @@ header.hero.new-hero #sevigneHeroCarousel .hero-slide {
   overflow: hidden !important;
 }
 header.hero.new-hero {
-  height: clamp(390px, 34vw, 500px) !important;
-  max-height: 500px !important;
-  min-height: 390px !important;
-  aspect-ratio: auto !important;
+  height: 75vw !important;
+  max-height: none !important;
+  min-height: 0 !important;
+  aspect-ratio: 4 / 3 !important;
   position: relative !important;
 }
 header.hero.new-hero #sevigneHeroCarousel {
@@ -1627,7 +1627,7 @@ header.hero.new-hero #sevigneHeroCarousel .hero-slide img {
   width: 100% !important;
   max-width: none !important;
   height: 100% !important;
-  object-fit: cover !important;
+  object-fit: contain !important;
   object-position: center top !important;
   filter: none !important;
   background: transparent !important;
@@ -1661,7 +1661,7 @@ header.hero.new-hero #sevigneHeroCarousel .sevigne-single-caption {
 @media (max-width:900px) {
   header.hero.new-hero {
     width:100% !important;
-    height:auto !important;
+    height:75vw !important;
     min-height:0 !important;
     max-height:none !important;
     aspect-ratio:4/3 !important;

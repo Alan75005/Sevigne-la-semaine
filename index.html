@@ -1488,8 +1488,11 @@ nav.tabs.v52-tabs .tab:not([data-tab="agenda"]){grid-row:3!important;grid-column
   header.hero.new-hero .archive-hero.sevigne-carousel {
     height: 100% !important;
   }
-  header.hero.new-hero .hero-slide img {
-    object-fit: contain !important;
+  header.hero.new-hero .hero-slide img,
+  #sevigneHeroCarousel .hero-slide img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
     object-position: center center !important;
   }
   nav.tabs.v52-tabs {

@@ -1495,6 +1495,37 @@ nav.tabs.v52-tabs .tab:not([data-tab="agenda"]){grid-row:3!important;grid-column
     object-fit: cover !important;
     object-position: center center !important;
   }
+  /* Affiche intégrale, sans couper le portrait ni les textes :
+     les côtés sont remplis par un rappel diffus de la même affiche. */
+  #sevigneHeroCarousel .hero-slide {
+    overflow: hidden !important;
+    background-color: #f5f1eb !important;
+  }
+  #sevigneHeroCarousel .hero-slide::before {
+    content: "" !important;
+    display: block !important;
+    position: absolute !important;
+    inset: -22px !important;
+    z-index: 0 !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    filter: blur(16px) brightness(1.1) !important;
+    opacity: .45 !important;
+    pointer-events: none !important;
+  }
+  #sevigneHeroCarousel .hero-slide[data-slide="0"]::before {
+    background-image: url("./carrousel-1.jpg") !important;
+  }
+  #sevigneHeroCarousel .hero-slide[data-slide="1"]::before {
+    background-image: url("./carrousel-2-reflet-medicis.svg") !important;
+  }
+  #sevigneHeroCarousel .hero-slide img {
+    position: relative !important;
+    z-index: 1 !important;
+    object-fit: contain !important;
+    object-position: center center !important;
+  }
   nav.tabs.v52-tabs {
     grid-template-columns: repeat(4, minmax(0,1fr)) !important;
     grid-template-rows: auto 48px 54px !important;

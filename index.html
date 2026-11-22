@@ -1767,7 +1767,7 @@ header.hero.new-hero #sevigneHeroCarousel .sevigne-single-caption {
   #sevigneHeroCarousel .hero-dots { left:75% !important; bottom:18px !important; }
 }
 @media(max-width:900px) {
-  header.hero.new-hero:has(#sevigneHeroCarousel .hero-slide.active[data-slide="2"]) { height:133.333vw !important; aspect-ratio:3/4 !important; }
+  /* Toutes les diapositives conservent la même hauteur sur mobile. */
   header.hero.new-hero #sevigneHeroCarousel .hero-slide img { object-fit:contain !important; object-position:center center !important;}
   #sevigneHeroCarousel .sevigne-single-caption { bottom:33px !important; }
 }
@@ -1809,6 +1809,13 @@ header.hero.new-hero #sevigneHeroCarousel .sevigne-single-caption {
   header.hero.new-hero #sevigneHeroCarousel .hero-dots{
     left:50%!important;bottom:8px!important;
     transform:translateX(-50%)!important;
+  }
+}
+</style><style id="sevigne-carousel-hardy-crop-v106">
+@media(max-width:900px){
+  header.hero.new-hero #sevigneHeroCarousel .hero-slide[data-slide="2"] img{
+    object-fit:cover!important;
+    object-position:center top!important;
   }
 }
 </style></head><body>
